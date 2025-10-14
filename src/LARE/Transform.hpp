@@ -16,6 +16,9 @@ namespace LARE{
 
     class Transform{
     private:
+        glm::vec3 internalToGLM(Vector3 vec){
+            return glm::vec3(vec.x, vec.y, vec.z);
+        }
     public:
         glm::mat4 transform;
 
@@ -24,11 +27,15 @@ namespace LARE{
         }
 
         void Scale(Vector3 newScale){
-            transform = glm::scale(transform, glm::vec3(newScale.x, newScale.y, newScale.z));
+            transform = glm::scale(transform, internalToGLM(newScale));
         }
 
         void Rotate(float angle, Vector3 axis){
-            transform = glm::rotate(transform, glm::radians(angle), glm::vec3(axis.x, axis.y, axis.z));   
+            transform = glm::rotate(transform, glm::radians(angle), internalToGLM(axis));   
+        }
+
+        void Translate(Vector3 offset){
+            transform = glm::translate(transform, internalToGLM(offset));
         }
     };
 }

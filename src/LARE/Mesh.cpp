@@ -56,7 +56,7 @@ void Mesh::drawMesh(unsigned int shaderProgram, Transform transform, Camera* cam
     int projLocation = glGetUniformLocation(shaderProgram, "proj");
     // Set values within shader
     glm::mat4 identity = glm::mat4(1.0f);
-    glUniformMatrix4fv(modelLocation, 1, GL_FALSE, glm::value_ptr(cam->camData.model));
+    glUniformMatrix4fv(modelLocation, 1, GL_FALSE, glm::value_ptr(/*cam->camData.model*/transform.transform));
     glUniformMatrix4fv(viewLocation, 1, GL_FALSE, glm::value_ptr(cam->camData.view));
     // Projection matrix... lets set it up
     glUniformMatrix4fv(projLocation, 1, GL_FALSE, glm::value_ptr(cam->camData.proj));

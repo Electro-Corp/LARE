@@ -45,6 +45,8 @@ int main(){
 
     engine.getRenderer()->setCamera(&camera);
 
+    object.transform.Rotate(45, {1.0f, 0.0f, 1.0f});
+
     while(1){
         // Update time
         static auto sT = std::chrono::high_resolution_clock::now();
@@ -53,12 +55,13 @@ int main(){
 
         // Update camera
         camera.camData = LARE::CameraData{};
-        camera.camData.model = glm::rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+        camera.camData.model = glm::rotate(glm::mat4(0.5f), glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f));
         camera.camData.view = glm::lookAt(glm::vec3(2.0f, 2.0f, 2.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 1.0f));
-        camera.pAngle = 40;
+        camera.pAngle = 90;
 
         // Update transform of object for fun
-        //object.transform.Rotate(sin(t), {0.0f, 0.5f, 0.0f});
+        object.transform.Rotate(sin(t), {0.0f, 1.0f, 0.0f});
+        //object.transform.Translate({0.0f, 0.0f, 0.5f});
 
         if(engine.Tick(testScene) == -1){
             break;
