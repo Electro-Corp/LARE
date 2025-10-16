@@ -40,6 +40,8 @@ Renderer::Renderer(std::string wTitle, int w, int h, int alias){
     glEnable(GL_DEPTH_TEST);
     // Enable MSAA
     glEnable(GL_MULTISAMPLE);
+    // Enable SRGB Gamma correction
+    glEnable(GL_FRAMEBUFFER_SRGB);
 
     // Setup resize
     glfwSetFramebufferSizeCallback(window, setupWindowBuffer);  

@@ -117,7 +117,7 @@ std::vector<Texture> Model::loadMatTexes(aiMaterial* mat, aiTextureType type, st
         }
         if(!s){
             Texture tex;
-            tex.id = genTexFromFile(str.C_Str(), directory, 0.0);
+            tex.id = genTexFromFile(str.C_Str(), directory, type == aiTextureType_DIFFUSE);
             tex.type = typeName;
             tex.path = str.C_Str();
             loadedTexes.push_back(tex);
@@ -169,7 +169,12 @@ int genTexFromFile(const char* path, const std::string dir, bool gamma){
         }
 
         glBindTexture(GL_TEXTURE_2D, texId);
-        glTexImage2D(GL_TEXTURE_2D, 0, format, w, h, 0, format, GL_UNSIGNED_BYTE, data);
+        if(gamma){
+            //             WARNING: overriding as SRGB... regardless of actual
+            glTexImage2D(GL_TEXTURE_2D, 0, GL_SRGB, w, h, 0, format, GL_UNSIGNED_BYTE, data);
+        }else{
+            glTexImage2D(GL_TEXTURE_2D, 0, format, w, h, 0, format, GL_UNSIGNED_BYTE, data);
+        }
         glGenerateMipmap(GL_TEXTURE_2D);
 
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);

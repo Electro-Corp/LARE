@@ -55,14 +55,14 @@ void Mesh::drawMesh(unsigned int shaderProgram, Transform transform, Camera* cam
     int viewLocation = glGetUniformLocation(shaderProgram, "view");
     int projLocation = glGetUniformLocation(shaderProgram, "proj");
     // Set values within shader
-    glm::mat4 identity = glm::mat4(1.0f);
-    glUniformMatrix4fv(modelLocation, 1, GL_FALSE, glm::value_ptr(/*cam->camData.model*/transform.transform));
+    glUniformMatrix4fv(modelLocation, 1, GL_FALSE, glm::value_ptr(transform.transform));
     glUniformMatrix4fv(viewLocation, 1, GL_FALSE, glm::value_ptr(cam->camData.view));
     // Projection matrix... lets set it up
     glUniformMatrix4fv(projLocation, 1, GL_FALSE, glm::value_ptr(cam->camData.proj));
     // Textures
     unsigned int diffuseN = 1;
     unsigned int specN = 1;
+    unsigned int normalN = 1;
     for(int i = 0; i < textures.size(); i++){
         glActiveTexture(GL_TEXTURE0 + i);
         std::string num;
@@ -72,6 +72,8 @@ void Mesh::drawMesh(unsigned int shaderProgram, Transform transform, Camera* cam
             num = std::to_string(diffuseN++);
         }else if(name == "texture_specular"){
             num = std::to_string(specN++);
+        }else if (name == "texture_normal"){
+            num = std::to_string(normalN++);
         }
         int matLocation = glGetUniformLocation(shaderProgram, std::string{"material." + name + num}.c_str());
         glUniform1i(matLocation, i);

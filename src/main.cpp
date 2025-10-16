@@ -54,8 +54,8 @@ int main(){
     object.transform.Rotate(45, {1.0f, 0.0f, 2.0f});
     object.transform.Scale({0.6f, 0.6f, 0.6f});
 
-    lightBulb.transform.Translate({1.0f, 1.0f, 5.0f});
-    lightBulb.transform.Scale({0.01f, 0.01f, 0.01f});
+    lightBulb.transform.Translate({0.5f, 0.0f, 1.0f});
+    lightBulb.transform.Scale({0.03f, 0.031f, 0.03f});
 
     while(1){
         // Update time
