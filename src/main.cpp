@@ -22,6 +22,7 @@ int main(){
     object.vertexShader = LARE::Shader("shaders/vert.gl");
     object.fragmentShader = LARE::Shader("shaders/frag.gl");
 
+    //                           amibient             specular             diffuse
     LARE::Light lightBulb({0.05f, 0.05f, 0.06f}, {1.0f, 1.0f, 1.0f}, {0.5f, 0.5f, 0.5f});
     lightBulb.model = new LARE::Model(&lightBulb, "assets/backpack/backpack.obj");
     lightBulb.vertexShader = LARE::Shader("shaders/vert_uni.gl");
@@ -37,8 +38,11 @@ int main(){
 
     // Generate Shaders
     for(auto& gm : testScene->objects){
+        printf("[test program] Generating shaders for %s\n", gm->getName().c_str());
         engine.getRenderer()->GenerateShaders(gm);
     }
+
+    printf("[test program] Shader generation finished.\n");
 
     // Camera init
     LARE::Camera camera;
@@ -47,11 +51,11 @@ int main(){
 
     engine.getRenderer()->setCamera(&camera);
 
-    object.transform.Rotate(90, {0.0f, 1.0f, 1.0f});
-    object.transform.Scale({0.9f, 0.9f, 0.9f});
+    object.transform.Rotate(45, {1.0f, 0.0f, 2.0f});
+    object.transform.Scale({0.6f, 0.6f, 0.6f});
 
+    lightBulb.transform.Translate({1.0f, 1.0f, 5.0f});
     lightBulb.transform.Scale({0.01f, 0.01f, 0.01f});
-    lightBulb.transform.Translate({0.5f, 3.5f, 3.5f});
 
     while(1){
         // Update time
@@ -63,10 +67,12 @@ int main(){
         camera.camData = LARE::CameraData{};
         camera.camData.model = glm::rotate(glm::mat4(0.5f), glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f));
         camera.camData.view = glm::lookAt(glm::vec3(2.0f, 2.0f, 2.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 1.0f));
-        camera.pAngle = 90;
+        camera.pAngle = 30;
 
         // Update transform of object for fun
-        //object.transform.Rotate(sin(t), {0.0f, 1.0f, 0.0f});
+        object.transform.Rotate(sin(t), {0.0f, 1.0f, 0.0f});
+        //lightBulb.transform.Translate({0.5 * sin(t), 0.5 * cos(t), 0.5 * sin(t)});
+
 
         if(engine.Tick(testScene) == -1){
             break;

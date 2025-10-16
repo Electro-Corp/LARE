@@ -12,16 +12,15 @@
 #include <assimp/postprocess.h>
 
 namespace LARE{
+    // Optimize, don't load a texture
+    // if we already did
+    static std::vector<Texture> loadedTexes;
     class Model{
     private:
         Object* gm;
 
         std::vector<Mesh> meshes;
         std::string directory;
-
-        // Optimize, don't load a texture
-        // if we already did
-        std::vector<Texture> loadedTexes;
 
         void loadModel(std::string path);
         void processNode(aiNode* node, const aiScene* scene);

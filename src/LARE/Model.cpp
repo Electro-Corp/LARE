@@ -75,6 +75,7 @@ Mesh Model::processMesh(aiMesh* mesh, const aiScene* scene){
             vec.y = mesh->mTextureCoords[0][i].y;
             vert.texCoord = vec;
         }else{
+            LOG(WARNING, "LOG_WARN") << "Model: Mesh doesn't have texture coords!";
             vert.texCoord = glm::vec2(0.0f, 0.0f);
         }
         verts.push_back(vert);
@@ -94,6 +95,9 @@ Mesh Model::processMesh(aiMesh* mesh, const aiScene* scene){
 
         std::vector<Texture> specMaps = loadMatTexes(mat, aiTextureType_SPECULAR, "texture_specular");
         texes.insert(texes.end(), specMaps.begin(), specMaps.end());
+
+        std::vector<Texture> normalMaps = loadMatTexes(mat, aiTextureType_NORMALS, "texture_normal");
+        texes.insert(texes.end(), normalMaps.begin(), normalMaps.end());
     }
 
     return Mesh(verts, inds, texes);
