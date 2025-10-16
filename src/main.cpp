@@ -12,7 +12,7 @@
 #include <chrono>
 
 int main(){
-    LARE::EngineOptions eOptions{"LARE Test", 800, 600};
+    LARE::EngineOptions eOptions{"LARE Test", 800, 600, 4};
     LARE::LARE engine(eOptions);
 
     LARE::Scene* testScene = new LARE::Scene("Test Scene 1");
@@ -48,7 +48,7 @@ int main(){
     engine.getRenderer()->setCamera(&camera);
 
     object.transform.Rotate(90, {0.0f, 1.0f, 1.0f});
-    object.transform.Scale({1.0f, 1.0f, 1.0f});
+    object.transform.Scale({0.9f, 0.9f, 0.9f});
 
     lightBulb.transform.Scale({0.01f, 0.01f, 0.01f});
     lightBulb.transform.Translate({0.5f, 3.5f, 3.5f});

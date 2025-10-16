@@ -143,6 +143,8 @@ int genTexFromFile(const char* path, const std::string dir, bool gamma){
     std::replace(fName.begin(), fName.end(), '\\', '/');
     fName = dir + "/" + fName;
 
+    LOG(INFO, "LOG_INFO") << "Model: Loading texture " << fName << "\n";
+
     unsigned int texId;
     glGenTextures(1, &texId);
 
@@ -176,7 +178,8 @@ int genTexFromFile(const char* path, const std::string dir, bool gamma){
         // TODO: In the future load a missing texture file
         LOG(ERROR, "LOG_ERROR") << "Model: Failed to generate texture " << path << "\n";
         stbi_image_free(data);
-        exit(-1);
+        return -1;
+        //exit(-1);
     }
 
     return texId;

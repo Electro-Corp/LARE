@@ -7,7 +7,13 @@ in vec3 FragPos;
 
 struct Material {
     sampler2D texture_diffuse1;
+    sampler2D texture_diffuse2;
+    sampler2D texture_diffuse3;
+    sampler2D texture_diffuse4;
     sampler2D texture_specular1;
+    sampler2D texture_specular2;
+    sampler2D texture_specular3;
+    sampler2D texture_specular4;
     float shininess;
 }; 
 
@@ -31,13 +37,14 @@ uniform vec3 viewPosition;
 
 void main()
 {
-    vec3 amb = light.ambient * texture(material.texture_diffuse1, TexCoords).rgb;
+    vec3 allTex = texture(material.texture_diffuse1, TexCoords).rgb + texture(material.texture_diffuse2, TexCoords).rgb + texture(material.texture_diffuse3, TexCoords).rgb + texture(material.texture_diffuse4, TexCoords).rgb;
+    vec3 amb = light.ambient * allTex;
 
     // Diffuse
     vec3 norm = normalize(Normal);
     vec3 dir = normalize(light.position - FragPos);
     float diff = max(dot(norm, dir), 0.0); 
-    vec3 diffuse = light.diffuse * (diff * texture(material.texture_diffuse1, TexCoords).rgb);
+    vec3 diffuse = light.diffuse * (diff * allTex);
 
     // Specular
     vec3 vDir = normalize(viewPosition - FragPos);

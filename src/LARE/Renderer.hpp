@@ -34,7 +34,7 @@ namespace LARE{
 
         Camera* cam;
     public:
-        Renderer(std::string wTitle, int w, int h);
+        Renderer(std::string wTitle, int w, int h, int alias);
 
         int UpdateScene(Scene* scene);
 

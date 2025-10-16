@@ -13,7 +13,7 @@
 namespace LARE{
     typedef struct{
         std::string windowTitle;
-        int width, height;
+        int width, height, alias;
     } EngineOptions;
 
     class LARE{

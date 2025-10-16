@@ -2,7 +2,7 @@
 
 namespace LARE{
 
-Renderer::Renderer(std::string wTitle, int w, int h){
+Renderer::Renderer(std::string wTitle, int w, int h, int alias){
     this->windowTitle = wTitle;
     this->width = w;
     this->height = h;
@@ -15,6 +15,7 @@ Renderer::Renderer(std::string wTitle, int w, int h){
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint(GLFW_SAMPLES, alias);
     // Create window
     window = glfwCreateWindow(width, height, wTitle.c_str(), nullptr, nullptr);
     // Yeah?
@@ -37,6 +38,8 @@ Renderer::Renderer(std::string wTitle, int w, int h){
     glViewport(0, 0, width, height);
     // Enable depth testing
     glEnable(GL_DEPTH_TEST);
+    // Enable MSAA
+    glEnable(GL_MULTISAMPLE);
 
     // Setup resize
     glfwSetFramebufferSizeCallback(window, setupWindowBuffer);  
