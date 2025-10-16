@@ -1,4 +1,5 @@
 #include <Shader.hpp>
+#include <Transform.hpp>
 
 namespace LARE{
 Shader::Shader(std::string shader) {
@@ -27,6 +28,14 @@ std::string Shader::readShader(){
     }
 
     return "NONE";
+}
+
+void Shader::setVec3(int id, const std::string &name, const glm::vec3 &value){
+    glUniform3f(glGetUniformLocation(id, name.c_str()), value.x, value.y, value.z); 
+}
+
+void Shader::setVec4(int id, const std::string &name, const glm::vec4 &value){
+    glUniform4fv(glGetUniformLocation(id, name.c_str()), 1, &value[0]); 
 }
 
 } // LARE

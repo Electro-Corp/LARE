@@ -420,7 +420,6 @@ CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o: \
  /home/segfault/LARE/src/LARE/Scene.hpp \
  /home/segfault/LARE/src/LARE/Object.hpp \
  /home/segfault/LARE/src/LARE/Shader.hpp \
- /home/segfault/LARE/src/LARE/Transform.hpp \
  /home/segfault/LARE/thirdPartyInc/glm/glm.hpp \
  /home/segfault/LARE/thirdPartyInc/glm/detail/_fixes.hpp \
  /home/segfault/LARE/thirdPartyInc/glm/detail/setup.hpp \
@@ -442,6 +441,8 @@ CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o: \
  /home/segfault/LARE/thirdPartyInc/glm/detail/type_half.inl \
  /home/segfault/LARE/thirdPartyInc/glm/integer.hpp \
  /home/segfault/LARE/thirdPartyInc/glm/detail/func_integer.inl \
+ /home/segfault/LARE/src/LARE/Transform.hpp \
+ /home/segfault/LARE/src/LARE/Light.hpp \
  /home/segfault/LARE/src/LARE/Model.hpp \
  /home/segfault/LARE/src/LARE/Mesh.hpp \
  /home/segfault/LARE/src/LARE/Camera.hpp /usr/include/assimp/Importer.hpp \

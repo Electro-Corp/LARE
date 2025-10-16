@@ -11,6 +11,11 @@
 namespace LARE{
     class Model;
 
+    enum ObjectType {
+        MESH,
+        LIGHT
+    };
+
     class Object{
     private:
         std::string name;
@@ -18,6 +23,9 @@ namespace LARE{
         Shader fragmentShader, vertexShader;
         // OpenGL Shader Program
         unsigned int shaderProgram;
+        
+        // Object Type
+        ObjectType type;
 
         Transform transform;
         

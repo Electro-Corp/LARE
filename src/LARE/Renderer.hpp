@@ -28,7 +28,7 @@ namespace LARE{
 
         GLFWwindow* window;
 
-        ClearColor clearColor{63.0f, 107.0f, 181.0f, 255.0f};
+        ClearColor clearColor{0.0f, 0.0f, 0.0f, 255.0f};
 
         int checkShaderComp(unsigned int shader);
 

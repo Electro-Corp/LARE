@@ -18,10 +18,15 @@ set(SOURCES
     src/LARE/Renderer.cpp
     src/LARE/Shader.cpp
     # Engine
+    src/LARE/Transform.cpp
     src/LARE/Scene.cpp
     src/LARE/Object.cpp
+    # Light
+    src/LARE/Light.cpp
+    # Mesh and Model
     src/LARE/Mesh.cpp
     src/LARE/Model.cpp
+    # LARE
     src/LARE/LARE.cpp
     # GLAD
     thirdPartyInc/glad.c

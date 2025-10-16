@@ -12,13 +12,13 @@ namespace LARE{
     // now just do {x, y, z}
     struct Vector3{
         float x, y, z;
+
+        Vector3();
+        Vector3(float x, float y, float z);
     };
 
     class Transform{
     private:
-        glm::vec3 internalToGLM(Vector3 vec){
-            return glm::vec3(vec.x, vec.y, vec.z);
-        }
     public:
         glm::mat4 transform;
 
@@ -27,15 +27,23 @@ namespace LARE{
         }
 
         void Scale(Vector3 newScale){
-            transform = glm::scale(transform, internalToGLM(newScale));
+            transform = glm::scale(transform, Transform::internalToGLM(newScale));
         }
 
         void Rotate(float angle, Vector3 axis){
-            transform = glm::rotate(transform, glm::radians(angle), internalToGLM(axis));   
+            transform = glm::rotate(transform, glm::radians(angle), Transform::internalToGLM(axis));   
         }
 
         void Translate(Vector3 offset){
-            transform = glm::translate(transform, internalToGLM(offset));
+            transform = glm::translate(transform, Transform::internalToGLM(offset));
+        }
+
+        glm::vec3 getPosition(){
+            return glm::vec3(transform[3]);
+        }
+
+        static glm::vec3 internalToGLM(Vector3 vec){
+            return glm::vec3(vec.x, vec.y, vec.z);
         }
     };
 }

@@ -1,6 +1,8 @@
-CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o: \
- /home/segfault/LARE/src/LARE/Scene.cpp /usr/include/stdc-predef.h \
- /home/segfault/LARE/src/LARE/Scene.hpp /usr/include/c++/11/string \
+CMakeFiles/LARE.dir/src/LARE/Light.cpp.o: \
+ /home/segfault/LARE/src/LARE/Light.cpp /usr/include/stdc-predef.h \
+ /home/segfault/LARE/src/LARE/Light.hpp \
+ /home/segfault/LARE/src/LARE/Object.hpp \
+ /home/segfault/LARE/src/LARE/Shader.hpp /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -136,8 +138,6 @@ CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/segfault/LARE/src/LARE/Object.hpp \
- /home/segfault/LARE/src/LARE/Shader.hpp \
  /home/segfault/LARE/thirdPartyInc/aixlog.hpp \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/c++/11/bits/stl_relops.h \
@@ -442,5 +442,4 @@ CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o: \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /home/segfault/LARE/thirdPartyInc/glm/gtc/type_ptr.inl \
- /home/segfault/LARE/src/LARE/Light.hpp
+ /home/segfault/LARE/thirdPartyInc/glm/gtc/type_ptr.inl

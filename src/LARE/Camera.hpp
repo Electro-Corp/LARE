@@ -3,6 +3,8 @@
 */
 #pragma once
 
+#include <Transform.hpp>
+
 #include <glm/ext/matrix_clip_space.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
@@ -15,6 +17,7 @@ namespace LARE{
 
 	class Camera {
 	public:
+		Vector3 position;
 		CameraData camData;
 		double pAngle;
 	};

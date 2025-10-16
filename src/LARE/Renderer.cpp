@@ -35,6 +35,8 @@ Renderer::Renderer(std::string wTitle, int w, int h){
 
     // init viewport
     glViewport(0, 0, width, height);
+    // Enable depth testing
+    glEnable(GL_DEPTH_TEST);
 
     // Setup resize
     glfwSetFramebufferSizeCallback(window, setupWindowBuffer);  
@@ -47,13 +49,27 @@ int Renderer::UpdateScene(Scene* scene){
     // Clear color
     glClearColor(clearColor.r / 255.0f, clearColor.g / 255.0f, clearColor.b / 255.0f, clearColor.a / 255.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    glEnable(GL_DEPTH_TEST);
 
     cam->camData.proj = glm::perspective(glm::radians((float)cam->pAngle), (float)width / (float)height, 0.1f, 100.0f);
 
     // Render each object
 	for (auto& gm : scene->objects) {
-		gm->model->drawModel(cam);
+        // Does it actually have something to render
+        if(gm->model){
+            // Set light data
+            if(gm->type != ObjectType::LIGHT){
+                int id = gm->shaderProgram;
+                glUseProgram(id);
+
+                Shader::setVec3(id, "viewPosition", Transform::internalToGLM(cam->position));
+
+                Shader::setVec3(id, "light.ambient", Transform::internalToGLM(scene->lights[0]->color));
+                Shader::setVec3(id, "light.specular", Transform::internalToGLM(scene->lights[0]->specular));
+                Shader::setVec3(id, "light.diffuse", Transform::internalToGLM(scene->lights[0]->diffuse));
+                Shader::setVec3(id, "light.position", scene->lights[0]->transform.getPosition());
+            }
+		    gm->model->drawModel(cam);
+        }
 	}
 
     glfwSwapBuffers(window);
@@ -101,7 +117,7 @@ void Renderer::GenerateShaders(Object* object){
     
     object->shaderProgram = sProgram;
 
-    LOG(INFO, "LOG_INFO") << "Shader program for " << object->getName() << " created.";
+    LOG(INFO, "LOG_INFO") << "Shader program for " << object->getName() << " created.\n";
 
     object->model->initMeshes();
 }

@@ -421,7 +421,6 @@ CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o: \
  /home/segfault/LARE/src/LARE/Scene.hpp \
  /home/segfault/LARE/src/LARE/Object.hpp \
  /home/segfault/LARE/src/LARE/Shader.hpp \
- /home/segfault/LARE/src/LARE/Transform.hpp \
  /home/segfault/LARE/thirdPartyInc/glm/glm.hpp \
  /home/segfault/LARE/thirdPartyInc/glm/detail/_fixes.hpp \
  /home/segfault/LARE/thirdPartyInc/glm/detail/setup.hpp \
@@ -443,6 +442,8 @@ CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o: \
  /home/segfault/LARE/thirdPartyInc/glm/detail/type_half.inl \
  /home/segfault/LARE/thirdPartyInc/glm/integer.hpp \
  /home/segfault/LARE/thirdPartyInc/glm/detail/func_integer.inl \
+ /home/segfault/LARE/src/LARE/Transform.hpp \
+ /home/segfault/LARE/src/LARE/Light.hpp \
  /home/segfault/LARE/src/LARE/Model.hpp \
  /home/segfault/LARE/src/LARE/Mesh.hpp \
  /home/segfault/LARE/src/LARE/Camera.hpp /usr/include/assimp/Importer.hpp \
@@ -460,4 +461,5 @@ CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o: \
  /usr/include/assimp/aabb.h /usr/include/assimp/light.h \
  /usr/include/assimp/camera.h /usr/include/assimp/material.h \
  /usr/include/assimp/material.inl /usr/include/assimp/anim.h \
- /usr/include/assimp/metadata.h /usr/include/assimp/postprocess.h
+ /usr/include/assimp/metadata.h /usr/include/assimp/postprocess.h \
+ /home/segfault/LARE/src/LARE/Scripting.hpp

@@ -4,6 +4,7 @@
 #pragma once
 #include <Renderer.hpp>
 #include <Scene.hpp>
+#include <Scripting.hpp>
 
 #include <aixlog.hpp>
 #include <glm/glm.hpp>

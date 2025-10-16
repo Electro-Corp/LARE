@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o"
   "CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o.d"
+  "CMakeFiles/LARE.dir/src/LARE/Light.cpp.o"
+  "CMakeFiles/LARE.dir/src/LARE/Light.cpp.o.d"
   "CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.o"
   "CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.o.d"
   "CMakeFiles/LARE.dir/src/LARE/Model.cpp.o"
@@ -13,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o.d"
   "CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o"
   "CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o.d"
+  "CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o"
+  "CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o.d"
   "CMakeFiles/LARE.dir/src/main.cpp.o"
   "CMakeFiles/LARE.dir/src/main.cpp.o.d"
   "CMakeFiles/LARE.dir/thirdPartyInc/glad.c.o"

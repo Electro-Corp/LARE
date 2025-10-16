@@ -209,7 +209,8 @@ CMakeFiles/LARE.dir/src/LARE/Object.cpp.o: \
  /usr/include/x86_64-linux-gnu/sys/syslog.h \
  /usr/include/x86_64-linux-gnu/bits/syslog-path.h \
  /usr/include/x86_64-linux-gnu/bits/syslog.h \
- /home/segfault/LARE/src/LARE/Transform.hpp \
+ /home/segfault/LARE/thirdPartyInc/glad/glad.h \
+ /usr/include/KHR/khrplatform.h \
  /home/segfault/LARE/thirdPartyInc/glm/glm.hpp \
  /home/segfault/LARE/thirdPartyInc/glm/detail/_fixes.hpp \
  /usr/include/c++/11/cmath /usr/include/math.h \
@@ -386,6 +387,7 @@ CMakeFiles/LARE.dir/src/LARE/Object.cpp.o: \
  /home/segfault/LARE/thirdPartyInc/glm/detail/type_half.inl \
  /home/segfault/LARE/thirdPartyInc/glm/integer.hpp \
  /home/segfault/LARE/thirdPartyInc/glm/detail/func_integer.inl \
+ /home/segfault/LARE/src/LARE/Transform.hpp \
  /home/segfault/LARE/thirdPartyInc/glm/gtc/matrix_transform.hpp \
  /home/segfault/LARE/thirdPartyInc/glm/gtc/../ext/matrix_projection.hpp \
  /home/segfault/LARE/thirdPartyInc/glm/gtc/../ext/../gtc/constants.hpp \

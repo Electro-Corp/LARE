@@ -3,6 +3,7 @@
 */
 
 #include <LARE.hpp>
+#include <Light.hpp>
 
 #define GLM_FORCE_RADIANS
 #include <glm/glm.hpp>
@@ -16,24 +17,23 @@ int main(){
 
     LARE::Scene* testScene = new LARE::Scene("Test Scene 1");
 
-    // Object
-    // std::vector<LARE::Vertex> verts = {
-	// 	{{-0.5f, -0.5f, 0.0f}, {1.0f, 0.0f, 0.0f}},
-	// 	{{0.5f, -0.5f, 0.0f}, {0.0f, 1.0f, 0.0f}},
-	// 	{{0.5f, 0.5f, 0.0f}, {0.0f, 0.0f, 1.0f}},
-	// 	{{-0.5f, 0.5f, 0.0f}, {1.0f, 1.0f, 1.0f}}
-	// };
-
-	// std::vector<uint16_t> inds = {
-	// 	0, 1, 3, 1, 2, 3
-	// };
-
     LARE::Object object("Test Object 1");
     object.model = new LARE::Model(&object, "assets/backpack/backpack.obj");
     object.vertexShader = LARE::Shader("shaders/vert.gl");
     object.fragmentShader = LARE::Shader("shaders/frag.gl");
 
+    LARE::Light lightBulb({0.05f, 0.05f, 0.06f}, {1.0f, 1.0f, 1.0f}, {0.5f, 0.5f, 0.5f});
+    lightBulb.model = new LARE::Model(&lightBulb, "assets/backpack/backpack.obj");
+    lightBulb.vertexShader = LARE::Shader("shaders/vert_uni.gl");
+    lightBulb.fragmentShader = LARE::Shader("shaders/frag_uni.gl");
+
     testScene->addObject(&object);
+    testScene->addObject(&lightBulb);
+
+    // Sort lights
+    testScene->findLights();
+
+    printf("[test program] Lights: %d\n", testScene->lights.size());
 
     // Generate Shaders
     for(auto& gm : testScene->objects){
@@ -43,9 +43,15 @@ int main(){
     // Camera init
     LARE::Camera camera;
 
+    camera.position = LARE::Vector3(0.0f, 0.0f, 0.0f);
+
     engine.getRenderer()->setCamera(&camera);
 
-    object.transform.Rotate(45, {1.0f, 0.0f, 1.0f});
+    object.transform.Rotate(90, {0.0f, 1.0f, 1.0f});
+    object.transform.Scale({1.0f, 1.0f, 1.0f});
+
+    lightBulb.transform.Scale({0.01f, 0.01f, 0.01f});
+    lightBulb.transform.Translate({0.5f, 3.5f, 3.5f});
 
     while(1){
         // Update time
@@ -60,13 +66,14 @@ int main(){
         camera.pAngle = 90;
 
         // Update transform of object for fun
-        object.transform.Rotate(sin(t), {0.0f, 1.0f, 0.0f});
-        //object.transform.Translate({0.0f, 0.0f, 0.5f});
+        //object.transform.Rotate(sin(t), {0.0f, 1.0f, 0.0f});
 
         if(engine.Tick(testScene) == -1){
             break;
         }
     }
+
+    printf("[test program] Exiting LARE Test!\n");
 
     delete testScene;
     return 0;

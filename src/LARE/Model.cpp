@@ -14,9 +14,11 @@ Model::Model(Object* gm, char* path){
 }
 
 void Model::loadModel(std::string path){
+    LOG(INFO, "LOG_INFO") << "Model: Loading " << path << "\n";
+
     // Use assimp to load
     Assimp::Importer import;
-    const aiScene* scene = import.ReadFile(path, aiProcess_Triangulate | aiProcess_FlipUVs);
+    const aiScene* scene = import.ReadFile(path, aiProcess_Triangulate | aiProcess_FlipUVs | aiProcess_CalcTangentSpace);
 
     if(!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode){
         LOG(ERROR, "LOG_ERROR") << "Model: Failed to load model " << path << "\nError: " << import.GetErrorString() << "\n";
@@ -55,10 +57,17 @@ Mesh Model::processMesh(aiMesh* mesh, const aiScene* scene){
         vec.z = mesh->mVertices[i].z;
         vert.pos = vec;
 
-        vec.x = mesh->mNormals[i].x;
-        vec.y = mesh->mNormals[i].y;
-        vec.z = mesh->mNormals[i].z;
-        vert.normal = vec;
+        if(!mesh->mNormals){
+            vec.x = 0;
+            vec.y = 0;
+            vec.z = 0;
+            vert.normal = vec;
+        }else{
+            vec.x = mesh->mNormals[i].x;
+            vec.y = mesh->mNormals[i].y;
+            vec.z = mesh->mNormals[i].z;
+            vert.normal = vec;
+        }
 
         if(mesh->mTextureCoords[0]){
             glm::vec2 vec;
@@ -131,6 +140,7 @@ void Model::drawModel(Camera* cam){
 // Generate GL texture from file 
 int genTexFromFile(const char* path, const std::string dir, bool gamma){
     std::string fName = path;
+    std::replace(fName.begin(), fName.end(), '\\', '/');
     fName = dir + "/" + fName;
 
     unsigned int texId;

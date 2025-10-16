@@ -153,6 +153,30 @@ src/LARE/LARE.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/LARE.cpp.s
 .PHONY : src/LARE/LARE.cpp.s
 
+src/LARE/Light.o: src/LARE/Light.cpp.o
+.PHONY : src/LARE/Light.o
+
+# target to build an object file
+src/LARE/Light.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/Light.cpp.o
+.PHONY : src/LARE/Light.cpp.o
+
+src/LARE/Light.i: src/LARE/Light.cpp.i
+.PHONY : src/LARE/Light.i
+
+# target to preprocess a source file
+src/LARE/Light.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/Light.cpp.i
+.PHONY : src/LARE/Light.cpp.i
+
+src/LARE/Light.s: src/LARE/Light.cpp.s
+.PHONY : src/LARE/Light.s
+
+# target to generate assembly for a file
+src/LARE/Light.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/Light.cpp.s
+.PHONY : src/LARE/Light.cpp.s
+
 src/LARE/Mesh.o: src/LARE/Mesh.cpp.o
 .PHONY : src/LARE/Mesh.o
 
@@ -297,6 +321,30 @@ src/LARE/Shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/Shader.cpp.s
 .PHONY : src/LARE/Shader.cpp.s
 
+src/LARE/Transform.o: src/LARE/Transform.cpp.o
+.PHONY : src/LARE/Transform.o
+
+# target to build an object file
+src/LARE/Transform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o
+.PHONY : src/LARE/Transform.cpp.o
+
+src/LARE/Transform.i: src/LARE/Transform.cpp.i
+.PHONY : src/LARE/Transform.i
+
+# target to preprocess a source file
+src/LARE/Transform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/Transform.cpp.i
+.PHONY : src/LARE/Transform.cpp.i
+
+src/LARE/Transform.s: src/LARE/Transform.cpp.s
+.PHONY : src/LARE/Transform.s
+
+# target to generate assembly for a file
+src/LARE/Transform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/Transform.cpp.s
+.PHONY : src/LARE/Transform.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -357,6 +405,9 @@ help:
 	@echo "... src/LARE/LARE.o"
 	@echo "... src/LARE/LARE.i"
 	@echo "... src/LARE/LARE.s"
+	@echo "... src/LARE/Light.o"
+	@echo "... src/LARE/Light.i"
+	@echo "... src/LARE/Light.s"
 	@echo "... src/LARE/Mesh.o"
 	@echo "... src/LARE/Mesh.i"
 	@echo "... src/LARE/Mesh.s"
@@ -375,6 +426,9 @@ help:
 	@echo "... src/LARE/Shader.o"
 	@echo "... src/LARE/Shader.i"
 	@echo "... src/LARE/Shader.s"
+	@echo "... src/LARE/Transform.o"
+	@echo "... src/LARE/Transform.i"
+	@echo "... src/LARE/Transform.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
