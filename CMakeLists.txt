@@ -7,10 +7,15 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -g")
 
 set(BUILD_WSI_XLIB_SUPPORT OFF)
 
+# Lua
+find_package(Lua REQUIRED)
+
 # Include directories
 include_directories(
     ${CMAKE_SOURCE_DIR}/src/LARE
     ${CMAKE_SOURCE_DIR}/thirdPartyInc
+    /usr/local/include 
+    ${LUA_INCLUDE_DIR}
 )
 
 set(SOURCES
@@ -18,6 +23,7 @@ set(SOURCES
     src/LARE/Renderer.cpp
     src/LARE/Shader.cpp
     # Engine
+    src/LARE/Scripting.cpp
     src/LARE/Transform.cpp
     src/LARE/Scene.cpp
     src/LARE/Object.cpp
@@ -47,4 +53,6 @@ target_link_libraries(LARE
     Xi
     dl
     assimp
+    ${LUA_LIBRARIES} 
+    ${LUA_DEPENDENCIES}
 )

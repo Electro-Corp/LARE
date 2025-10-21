@@ -10,6 +10,7 @@
 
 namespace LARE{
     class Model;
+    class Script;
 
     enum ObjectType {
         MESH,
@@ -31,7 +32,15 @@ namespace LARE{
         
         Model* model;
 
+        Script* script;
+
         Object(std::string name);
+
+        void initScript();
+
+        void updateScript();
+
+        void update();
 
         std::string getName(){
             return name;

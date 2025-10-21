@@ -297,6 +297,30 @@ src/LARE/Scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/Scene.cpp.s
 .PHONY : src/LARE/Scene.cpp.s
 
+src/LARE/Scripting.o: src/LARE/Scripting.cpp.o
+.PHONY : src/LARE/Scripting.o
+
+# target to build an object file
+src/LARE/Scripting.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o
+.PHONY : src/LARE/Scripting.cpp.o
+
+src/LARE/Scripting.i: src/LARE/Scripting.cpp.i
+.PHONY : src/LARE/Scripting.i
+
+# target to preprocess a source file
+src/LARE/Scripting.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.i
+.PHONY : src/LARE/Scripting.cpp.i
+
+src/LARE/Scripting.s: src/LARE/Scripting.cpp.s
+.PHONY : src/LARE/Scripting.s
+
+# target to generate assembly for a file
+src/LARE/Scripting.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.s
+.PHONY : src/LARE/Scripting.cpp.s
+
 src/LARE/Shader.o: src/LARE/Shader.cpp.o
 .PHONY : src/LARE/Shader.o
 
@@ -423,6 +447,9 @@ help:
 	@echo "... src/LARE/Scene.o"
 	@echo "... src/LARE/Scene.i"
 	@echo "... src/LARE/Scene.s"
+	@echo "... src/LARE/Scripting.o"
+	@echo "... src/LARE/Scripting.i"
+	@echo "... src/LARE/Scripting.s"
 	@echo "... src/LARE/Shader.o"
 	@echo "... src/LARE/Shader.i"
 	@echo "... src/LARE/Shader.s"

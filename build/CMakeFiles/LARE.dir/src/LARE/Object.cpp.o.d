@@ -441,4 +441,55 @@ CMakeFiles/LARE.dir/src/LARE/Object.cpp.o: \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /home/segfault/LARE/thirdPartyInc/glm/gtc/type_ptr.inl
+ /home/segfault/LARE/thirdPartyInc/glm/gtc/type_ptr.inl \
+ /home/segfault/LARE/src/LARE/Scripting.hpp \
+ /home/segfault/LARE/src/LARE/Camera.hpp \
+ /home/segfault/LARE/src/LARE/Light.hpp \
+ /home/segfault/LARE/src/LARE/Renderer.hpp /usr/include/GLFW/glfw3.h \
+ /home/segfault/LARE/src/LARE/Scene.hpp \
+ /home/segfault/LARE/src/LARE/Model.hpp \
+ /home/segfault/LARE/src/LARE/Mesh.hpp /usr/include/assimp/Importer.hpp \
+ /usr/include/assimp/types.h /usr/include/assimp/defs.h \
+ /usr/include/assimp/config.h /usr/include/assimp/vector2.h \
+ /usr/include/assimp/vector3.h /usr/include/assimp/color4.h \
+ /usr/include/assimp/matrix3x3.h /usr/include/assimp/matrix4x4.h \
+ /usr/include/assimp/quaternion.h /usr/include/assimp/vector2.inl \
+ /usr/include/assimp/vector3.inl /usr/include/assimp/color4.inl \
+ /usr/include/assimp/matrix3x3.inl /usr/include/assimp/matrix4x4.inl \
+ /usr/include/assimp/MathFunctions.h /usr/include/assimp/quaternion.inl \
+ /usr/include/assimp/scene.h /usr/include/assimp/texture.h \
+ /usr/include/assimp/Compiler/pushpack1.h \
+ /usr/include/assimp/Compiler/poppack1.h /usr/include/assimp/mesh.h \
+ /usr/include/assimp/aabb.h /usr/include/assimp/light.h \
+ /usr/include/assimp/camera.h /usr/include/assimp/material.h \
+ /usr/include/assimp/material.inl /usr/include/assimp/anim.h \
+ /usr/include/assimp/metadata.h /usr/include/assimp/postprocess.h \
+ /usr/include/lua5.1/lua.h /usr/include/lua5.1/luaconf.h \
+ /usr/include/x86_64-linux-gnu/lua5.1-deb-multiarch.h \
+ /usr/include/lua5.1/lauxlib.h /usr/include/lua5.1/lua.h \
+ /usr/include/lua5.1/lualib.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/LuaBridge.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Config.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/CFunctions.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/ClassInfo.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Errors.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/FuncTraits.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/LuaHelpers.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Options.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/FlagSet.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Stack.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Expected.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Result.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Userdata.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/LuaException.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/TypeTraits.h \
+ /usr/include/c++/11/optional \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Enum.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Globals.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Invoke.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/LuaRef.h \
+ /usr/include/c++/11/variant \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Iterator.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Namespace.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Overload.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/ScopeGuard.h

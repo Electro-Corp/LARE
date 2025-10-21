@@ -21,6 +21,7 @@ int main(){
     object.model = new LARE::Model(&object, "assets/backpack/backpack.obj");
     object.vertexShader = LARE::Shader("shaders/vert.gl");
     object.fragmentShader = LARE::Shader("shaders/frag.gl");
+    object.script = engine.getScriptMan()->initScript("assets/scripts/testObj.lua", &object);
 
     //                           amibient             specular             diffuse
     LARE::Light lightBulb({0.05f, 0.05f, 0.06f}, {1.0f, 1.0f, 1.0f}, {0.5f, 0.5f, 0.5f});
@@ -44,6 +45,9 @@ int main(){
 
     printf("[test program] Shader generation finished.\n");
 
+    // Init script
+    object.initScript();
+
     // Camera init
     LARE::Camera camera;
 
@@ -51,7 +55,7 @@ int main(){
 
     engine.getRenderer()->setCamera(&camera);
 
-    object.transform.Rotate(45, {1.0f, 0.0f, 2.0f});
+    object.transform.Rotate(45, {0.5f, 0.0f, 1.0f});
     object.transform.Scale({0.6f, 0.6f, 0.6f});
 
     lightBulb.transform.Translate({0.5f, 0.0f, 1.0f});
@@ -67,11 +71,13 @@ int main(){
         camera.camData = LARE::CameraData{};
         camera.camData.model = glm::rotate(glm::mat4(0.5f), glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f));
         camera.camData.view = glm::lookAt(glm::vec3(2.0f, 2.0f, 2.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 1.0f));
-        camera.pAngle = 30;
+        camera.pAngle = 45;
 
         // Update transform of object for fun
-        object.transform.Rotate(sin(t), {0.0f, 1.0f, 0.0f});
+        //object.transform.Rotate(2.0f * sin(t), {0.0f, 1.0f, 0.0f});
         //lightBulb.transform.Translate({0.5 * sin(t), 0.5 * cos(t), 0.5 * sin(t)});
+
+        object.update();
 
 
         if(engine.Tick(testScene) == -1){

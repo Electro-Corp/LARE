@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o.d"
   "CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o"
   "CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o.d"
+  "CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o"
+  "CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o.d"
   "CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o"
   "CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o.d"
   "CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o"

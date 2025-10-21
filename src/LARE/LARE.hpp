@@ -19,6 +19,7 @@ namespace LARE{
     class LARE{
     private:
         Renderer* renderer;
+        ScriptManager* scriptManager;
     public:
         LARE(EngineOptions options);
 
@@ -26,6 +27,10 @@ namespace LARE{
 
         Renderer* getRenderer(){
             return renderer;
+        }
+
+        ScriptManager* getScriptMan(){
+            return scriptManager;
         }
 
         ~LARE();

@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/segfault/LARE/src/LARE/Object.cpp" "CMakeFiles/LARE.dir/src/LARE/Object.cpp.o" "gcc" "CMakeFiles/LARE.dir/src/LARE/Object.cpp.o.d"
   "/home/segfault/LARE/src/LARE/Renderer.cpp" "CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o" "gcc" "CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o.d"
   "/home/segfault/LARE/src/LARE/Scene.cpp" "CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o" "gcc" "CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o.d"
+  "/home/segfault/LARE/src/LARE/Scripting.cpp" "CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o" "gcc" "CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o.d"
   "/home/segfault/LARE/src/LARE/Shader.cpp" "CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o" "gcc" "CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o.d"
   "/home/segfault/LARE/src/LARE/Transform.cpp" "CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o" "gcc" "CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o.d"
   "/home/segfault/LARE/src/main.cpp" "CMakeFiles/LARE.dir/src/main.cpp.o" "gcc" "CMakeFiles/LARE.dir/src/main.cpp.o.d"

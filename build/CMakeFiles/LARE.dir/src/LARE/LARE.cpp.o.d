@@ -462,4 +462,33 @@ CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o: \
  /usr/include/assimp/camera.h /usr/include/assimp/material.h \
  /usr/include/assimp/material.inl /usr/include/assimp/anim.h \
  /usr/include/assimp/metadata.h /usr/include/assimp/postprocess.h \
- /home/segfault/LARE/src/LARE/Scripting.hpp
+ /home/segfault/LARE/src/LARE/Scripting.hpp /usr/include/lua5.1/lua.h \
+ /usr/include/lua5.1/luaconf.h \
+ /usr/include/x86_64-linux-gnu/lua5.1-deb-multiarch.h \
+ /usr/include/lua5.1/lauxlib.h /usr/include/lua5.1/lua.h \
+ /usr/include/lua5.1/lualib.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/LuaBridge.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Config.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/CFunctions.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/ClassInfo.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Errors.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/FuncTraits.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/LuaHelpers.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Options.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/FlagSet.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Stack.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Expected.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Result.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Userdata.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/LuaException.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/TypeTraits.h \
+ /usr/include/c++/11/optional \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Enum.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Globals.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Invoke.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/LuaRef.h \
+ /usr/include/c++/11/variant \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Iterator.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Namespace.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Overload.h \
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/ScopeGuard.h

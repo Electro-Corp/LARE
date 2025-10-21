@@ -76,160 +76,175 @@ CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o: CMakeFiles/LARE.dir/flags.make
 CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o: /home/segfault/LARE/src/LARE/Renderer.cpp
 CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o: CMakeFiles/LARE.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o -c /home/segfault/LARE/src/LARE/Renderer.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o -c /home/segfault/LARE/src/LARE/Renderer.cpp
 
 CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/Renderer.cpp > CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/Renderer.cpp > CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.i
 
 CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/Renderer.cpp -o CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/Renderer.cpp -o CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.s
 
 CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o: CMakeFiles/LARE.dir/flags.make
 CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o: /home/segfault/LARE/src/LARE/Shader.cpp
 CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o: CMakeFiles/LARE.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o -c /home/segfault/LARE/src/LARE/Shader.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o -c /home/segfault/LARE/src/LARE/Shader.cpp
 
 CMakeFiles/LARE.dir/src/LARE/Shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LARE.dir/src/LARE/Shader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/Shader.cpp > CMakeFiles/LARE.dir/src/LARE/Shader.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/Shader.cpp > CMakeFiles/LARE.dir/src/LARE/Shader.cpp.i
 
 CMakeFiles/LARE.dir/src/LARE/Shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LARE.dir/src/LARE/Shader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/Shader.cpp -o CMakeFiles/LARE.dir/src/LARE/Shader.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/Shader.cpp -o CMakeFiles/LARE.dir/src/LARE/Shader.cpp.s
+
+CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o: CMakeFiles/LARE.dir/flags.make
+CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o: /home/segfault/LARE/src/LARE/Scripting.cpp
+CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o: CMakeFiles/LARE.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o -c /home/segfault/LARE/src/LARE/Scripting.cpp
+
+CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/Scripting.cpp > CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.i
+
+CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/Scripting.cpp -o CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.s
 
 CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o: CMakeFiles/LARE.dir/flags.make
 CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o: /home/segfault/LARE/src/LARE/Transform.cpp
 CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o: CMakeFiles/LARE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o -c /home/segfault/LARE/src/LARE/Transform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o -c /home/segfault/LARE/src/LARE/Transform.cpp
 
 CMakeFiles/LARE.dir/src/LARE/Transform.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LARE.dir/src/LARE/Transform.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/Transform.cpp > CMakeFiles/LARE.dir/src/LARE/Transform.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/Transform.cpp > CMakeFiles/LARE.dir/src/LARE/Transform.cpp.i
 
 CMakeFiles/LARE.dir/src/LARE/Transform.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LARE.dir/src/LARE/Transform.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/Transform.cpp -o CMakeFiles/LARE.dir/src/LARE/Transform.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/Transform.cpp -o CMakeFiles/LARE.dir/src/LARE/Transform.cpp.s
 
 CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o: CMakeFiles/LARE.dir/flags.make
 CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o: /home/segfault/LARE/src/LARE/Scene.cpp
 CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o: CMakeFiles/LARE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o -c /home/segfault/LARE/src/LARE/Scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o -c /home/segfault/LARE/src/LARE/Scene.cpp
 
 CMakeFiles/LARE.dir/src/LARE/Scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LARE.dir/src/LARE/Scene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/Scene.cpp > CMakeFiles/LARE.dir/src/LARE/Scene.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/Scene.cpp > CMakeFiles/LARE.dir/src/LARE/Scene.cpp.i
 
 CMakeFiles/LARE.dir/src/LARE/Scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LARE.dir/src/LARE/Scene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/Scene.cpp -o CMakeFiles/LARE.dir/src/LARE/Scene.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/Scene.cpp -o CMakeFiles/LARE.dir/src/LARE/Scene.cpp.s
 
 CMakeFiles/LARE.dir/src/LARE/Object.cpp.o: CMakeFiles/LARE.dir/flags.make
 CMakeFiles/LARE.dir/src/LARE/Object.cpp.o: /home/segfault/LARE/src/LARE/Object.cpp
 CMakeFiles/LARE.dir/src/LARE/Object.cpp.o: CMakeFiles/LARE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LARE.dir/src/LARE/Object.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/Object.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/Object.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/Object.cpp.o -c /home/segfault/LARE/src/LARE/Object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LARE.dir/src/LARE/Object.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/Object.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/Object.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/Object.cpp.o -c /home/segfault/LARE/src/LARE/Object.cpp
 
 CMakeFiles/LARE.dir/src/LARE/Object.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LARE.dir/src/LARE/Object.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/Object.cpp > CMakeFiles/LARE.dir/src/LARE/Object.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/Object.cpp > CMakeFiles/LARE.dir/src/LARE/Object.cpp.i
 
 CMakeFiles/LARE.dir/src/LARE/Object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LARE.dir/src/LARE/Object.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/Object.cpp -o CMakeFiles/LARE.dir/src/LARE/Object.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/Object.cpp -o CMakeFiles/LARE.dir/src/LARE/Object.cpp.s
 
 CMakeFiles/LARE.dir/src/LARE/Light.cpp.o: CMakeFiles/LARE.dir/flags.make
 CMakeFiles/LARE.dir/src/LARE/Light.cpp.o: /home/segfault/LARE/src/LARE/Light.cpp
 CMakeFiles/LARE.dir/src/LARE/Light.cpp.o: CMakeFiles/LARE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LARE.dir/src/LARE/Light.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/Light.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/Light.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/Light.cpp.o -c /home/segfault/LARE/src/LARE/Light.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LARE.dir/src/LARE/Light.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/Light.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/Light.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/Light.cpp.o -c /home/segfault/LARE/src/LARE/Light.cpp
 
 CMakeFiles/LARE.dir/src/LARE/Light.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LARE.dir/src/LARE/Light.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/Light.cpp > CMakeFiles/LARE.dir/src/LARE/Light.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/Light.cpp > CMakeFiles/LARE.dir/src/LARE/Light.cpp.i
 
 CMakeFiles/LARE.dir/src/LARE/Light.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LARE.dir/src/LARE/Light.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/Light.cpp -o CMakeFiles/LARE.dir/src/LARE/Light.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/Light.cpp -o CMakeFiles/LARE.dir/src/LARE/Light.cpp.s
 
 CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.o: CMakeFiles/LARE.dir/flags.make
 CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.o: /home/segfault/LARE/src/LARE/Mesh.cpp
 CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.o: CMakeFiles/LARE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.o -c /home/segfault/LARE/src/LARE/Mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.o -c /home/segfault/LARE/src/LARE/Mesh.cpp
 
 CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/Mesh.cpp > CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/Mesh.cpp > CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.i
 
 CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/Mesh.cpp -o CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/Mesh.cpp -o CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.s
 
 CMakeFiles/LARE.dir/src/LARE/Model.cpp.o: CMakeFiles/LARE.dir/flags.make
 CMakeFiles/LARE.dir/src/LARE/Model.cpp.o: /home/segfault/LARE/src/LARE/Model.cpp
 CMakeFiles/LARE.dir/src/LARE/Model.cpp.o: CMakeFiles/LARE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LARE.dir/src/LARE/Model.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/Model.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/Model.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/Model.cpp.o -c /home/segfault/LARE/src/LARE/Model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LARE.dir/src/LARE/Model.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/Model.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/Model.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/Model.cpp.o -c /home/segfault/LARE/src/LARE/Model.cpp
 
 CMakeFiles/LARE.dir/src/LARE/Model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LARE.dir/src/LARE/Model.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/Model.cpp > CMakeFiles/LARE.dir/src/LARE/Model.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/Model.cpp > CMakeFiles/LARE.dir/src/LARE/Model.cpp.i
 
 CMakeFiles/LARE.dir/src/LARE/Model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LARE.dir/src/LARE/Model.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/Model.cpp -o CMakeFiles/LARE.dir/src/LARE/Model.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/Model.cpp -o CMakeFiles/LARE.dir/src/LARE/Model.cpp.s
 
 CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o: CMakeFiles/LARE.dir/flags.make
 CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o: /home/segfault/LARE/src/LARE/LARE.cpp
 CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o: CMakeFiles/LARE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o -c /home/segfault/LARE/src/LARE/LARE.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o -MF CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o.d -o CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o -c /home/segfault/LARE/src/LARE/LARE.cpp
 
 CMakeFiles/LARE.dir/src/LARE/LARE.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LARE.dir/src/LARE/LARE.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/LARE.cpp > CMakeFiles/LARE.dir/src/LARE/LARE.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/LARE/LARE.cpp > CMakeFiles/LARE.dir/src/LARE/LARE.cpp.i
 
 CMakeFiles/LARE.dir/src/LARE/LARE.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LARE.dir/src/LARE/LARE.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/LARE.cpp -o CMakeFiles/LARE.dir/src/LARE/LARE.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/LARE/LARE.cpp -o CMakeFiles/LARE.dir/src/LARE/LARE.cpp.s
 
 CMakeFiles/LARE.dir/thirdPartyInc/glad.c.o: CMakeFiles/LARE.dir/flags.make
 CMakeFiles/LARE.dir/thirdPartyInc/glad.c.o: /home/segfault/LARE/thirdPartyInc/glad.c
 CMakeFiles/LARE.dir/thirdPartyInc/glad.c.o: CMakeFiles/LARE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/LARE.dir/thirdPartyInc/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LARE.dir/thirdPartyInc/glad.c.o -MF CMakeFiles/LARE.dir/thirdPartyInc/glad.c.o.d -o CMakeFiles/LARE.dir/thirdPartyInc/glad.c.o -c /home/segfault/LARE/thirdPartyInc/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/LARE.dir/thirdPartyInc/glad.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LARE.dir/thirdPartyInc/glad.c.o -MF CMakeFiles/LARE.dir/thirdPartyInc/glad.c.o.d -o CMakeFiles/LARE.dir/thirdPartyInc/glad.c.o -c /home/segfault/LARE/thirdPartyInc/glad.c
 
 CMakeFiles/LARE.dir/thirdPartyInc/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LARE.dir/thirdPartyInc/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/segfault/LARE/thirdPartyInc/glad.c > CMakeFiles/LARE.dir/thirdPartyInc/glad.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/segfault/LARE/thirdPartyInc/glad.c > CMakeFiles/LARE.dir/thirdPartyInc/glad.c.i
 
 CMakeFiles/LARE.dir/thirdPartyInc/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LARE.dir/thirdPartyInc/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/segfault/LARE/thirdPartyInc/glad.c -o CMakeFiles/LARE.dir/thirdPartyInc/glad.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/segfault/LARE/thirdPartyInc/glad.c -o CMakeFiles/LARE.dir/thirdPartyInc/glad.c.s
 
 CMakeFiles/LARE.dir/src/main.cpp.o: CMakeFiles/LARE.dir/flags.make
 CMakeFiles/LARE.dir/src/main.cpp.o: /home/segfault/LARE/src/main.cpp
 CMakeFiles/LARE.dir/src/main.cpp.o: CMakeFiles/LARE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/LARE.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/main.cpp.o -MF CMakeFiles/LARE.dir/src/main.cpp.o.d -o CMakeFiles/LARE.dir/src/main.cpp.o -c /home/segfault/LARE/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/LARE.dir/src/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LARE.dir/src/main.cpp.o -MF CMakeFiles/LARE.dir/src/main.cpp.o.d -o CMakeFiles/LARE.dir/src/main.cpp.o -c /home/segfault/LARE/src/main.cpp
 
 CMakeFiles/LARE.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LARE.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/main.cpp > CMakeFiles/LARE.dir/src/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/segfault/LARE/src/main.cpp > CMakeFiles/LARE.dir/src/main.cpp.i
 
 CMakeFiles/LARE.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LARE.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/main.cpp -o CMakeFiles/LARE.dir/src/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/segfault/LARE/src/main.cpp -o CMakeFiles/LARE.dir/src/main.cpp.s
 
 # Object files for target LARE
 LARE_OBJECTS = \
 "CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o" \
 "CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o" \
+"CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o" \
 "CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o" \
 "CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o" \
 "CMakeFiles/LARE.dir/src/LARE/Object.cpp.o" \
@@ -245,6 +260,7 @@ LARE_EXTERNAL_OBJECTS =
 
 LARE: CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o
 LARE: CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o
+LARE: CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o
 LARE: CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o
 LARE: CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o
 LARE: CMakeFiles/LARE.dir/src/LARE/Object.cpp.o
@@ -255,8 +271,10 @@ LARE: CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o
 LARE: CMakeFiles/LARE.dir/thirdPartyInc/glad.c.o
 LARE: CMakeFiles/LARE.dir/src/main.cpp.o
 LARE: CMakeFiles/LARE.dir/build.make
+LARE: /usr/lib/x86_64-linux-gnu/liblua5.1.so
+LARE: /usr/lib/x86_64-linux-gnu/libm.so
 LARE: CMakeFiles/LARE.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable LARE"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/segfault/LARE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable LARE"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LARE.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

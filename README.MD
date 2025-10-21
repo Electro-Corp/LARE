@@ -11,7 +11,11 @@ make
 ```
 
 ## Third Party Stuff
+### "included" - find in `thirdPartyInc`
 - GLFW
-- GLAD
-- AixLog
-- glm
+- Assimp 
+- Lua 5.1 
+- GLAD (included)
+- AixLog (included)
+- glm (included)
+- Luabridge3 (included)
