@@ -3,7 +3,8 @@ out vec4 FragColor;
 
 in vec2 TexCoords;
 in vec3 Normal;
-in vec3 FragPos;
+in vec3 TanFragPos;
+in mat3 TBN;
 
 struct Material {
     sampler2D texture_diffuse1;
@@ -34,10 +35,15 @@ uniform vec3 viewPosition;
 
 void main()
 {
+    vec3 tanLightPos = TBN * light.position;
+    vec3 tanViewPos = TBN * viewPosition;
     // Vector things
-    vec3 norm = normalize(Normal);
-    vec3 lDir = normalize(light.position - FragPos);
-    vec3 vDir = normalize(viewPosition - FragPos);
+    vec3 norm = texture(material.texture_normal1, TexCoords).rgb; //normalize(Normal);
+    norm = normalize(norm * 2.0 - 1.0);
+    norm = normalize(norm * TBN);
+    // Direction vectors
+    vec3 lDir = normalize(tanLightPos - TanFragPos);
+    vec3 vDir = normalize(tanViewPos - TanFragPos);
     vec3 rDir = reflect(-lDir, norm);
     vec3 hDir = normalize(lDir + vDir);
 

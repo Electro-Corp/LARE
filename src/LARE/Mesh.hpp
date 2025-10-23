@@ -16,6 +16,7 @@ namespace LARE{
 		glm::vec3 pos;
         glm::vec3 normal;
 		glm::vec2 texCoord;
+		glm::vec3 tangents;
     };
 
     struct Texture {
@@ -85,7 +86,7 @@ namespace LARE{
 		}
 
 		int getVertsRealSize() {
-			return sizeof(float) * (8 * vertices.size());
+			return sizeof(float) * (11 * vertices.size());
 		}
 
 		int getIndsRealSize() {

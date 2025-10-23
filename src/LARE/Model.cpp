@@ -69,6 +69,12 @@ Mesh Model::processMesh(aiMesh* mesh, const aiScene* scene){
             vert.normal = vec;
         }
 
+        // TBN
+        vec.x = mesh->mTangents[i].x;
+        vec.y = mesh->mTangents[i].y;
+        vec.z = mesh->mTangents[i].z;
+        vert.tangents = vec;
+
         if(mesh->mTextureCoords[0]){
             glm::vec2 vec;
             vec.x = mesh->mTextureCoords[0][i].x;
@@ -96,7 +102,7 @@ Mesh Model::processMesh(aiMesh* mesh, const aiScene* scene){
         std::vector<Texture> specMaps = loadMatTexes(mat, aiTextureType_SPECULAR, "texture_specular");
         texes.insert(texes.end(), specMaps.begin(), specMaps.end());
 
-        std::vector<Texture> normalMaps = loadMatTexes(mat, aiTextureType_NORMALS, "texture_normal");
+        std::vector<Texture> normalMaps = loadMatTexes(mat, aiTextureType_HEIGHT, "texture_normal");
         texes.insert(texes.end(), normalMaps.begin(), normalMaps.end());
     }
 

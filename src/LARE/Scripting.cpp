@@ -23,6 +23,7 @@ ScriptManager::ScriptManager(Renderer* rendererPtr){
 }
 
 Script* ScriptManager::initScript(std::string path, Object* root){
+    LOG(INFO, "LOG_INFO") << "Loading script " << path << " on object "<< root->getName() << "...\n";
     // Init a lua statee
     lua_State* tmp = nullptr;
     tmp = luaL_newstate();

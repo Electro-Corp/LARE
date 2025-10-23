@@ -37,6 +37,9 @@ void Mesh::initMesh(){
     // Texture coords
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)(2 * sizeof(glm::vec3)));
     glEnableVertexAttribArray(2);
+    // TBN coords
+    glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)(2 * sizeof(glm::vec3) + sizeof(glm::vec2)));
+    glEnableVertexAttribArray(3);
 
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     
@@ -90,7 +93,7 @@ float* Mesh::packVerts() {
 	float* fVerts = (float*)malloc(this->getVertsRealSize());
 	if (fVerts) {
 		for (int i = 0; i < vertices.size(); i++) {
-			int baseMod = i * 8;
+			int baseMod = i * 11;
 			fVerts[baseMod] = vertices[i].pos.x;
 			fVerts[1 + baseMod] = vertices[i].pos.y;
 			fVerts[2 + baseMod] = vertices[i].pos.z;
@@ -99,6 +102,9 @@ float* Mesh::packVerts() {
 			fVerts[5 + baseMod] = vertices[i].normal.z;
             fVerts[6 + baseMod] = vertices[i].texCoord.x;
 			fVerts[7 + baseMod] = vertices[i].texCoord.y;
+            fVerts[8 + baseMod] = vertices[i].tangents.x;
+            fVerts[9 + baseMod] = vertices[i].tangents.y;
+            fVerts[10 + baseMod] = vertices[i].tangents.z;
 		}
 	}
 	return fVerts;

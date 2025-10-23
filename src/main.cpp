@@ -73,10 +73,6 @@ int main(){
         camera.camData.view = glm::lookAt(glm::vec3(2.0f, 2.0f, 2.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 1.0f));
         camera.pAngle = 45;
 
-        // Update transform of object for fun
-        //object.transform.Rotate(2.0f * sin(t), {0.0f, 1.0f, 0.0f});
-        //lightBulb.transform.Translate({0.5 * sin(t), 0.5 * cos(t), 0.5 * sin(t)});
-
         object.update();
 
 
