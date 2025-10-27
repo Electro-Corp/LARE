@@ -345,6 +345,30 @@ src/LARE/Shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/Shader.cpp.s
 .PHONY : src/LARE/Shader.cpp.s
 
+src/LARE/Skybox.o: src/LARE/Skybox.cpp.o
+.PHONY : src/LARE/Skybox.o
+
+# target to build an object file
+src/LARE/Skybox.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/Skybox.cpp.o
+.PHONY : src/LARE/Skybox.cpp.o
+
+src/LARE/Skybox.i: src/LARE/Skybox.cpp.i
+.PHONY : src/LARE/Skybox.i
+
+# target to preprocess a source file
+src/LARE/Skybox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/Skybox.cpp.i
+.PHONY : src/LARE/Skybox.cpp.i
+
+src/LARE/Skybox.s: src/LARE/Skybox.cpp.s
+.PHONY : src/LARE/Skybox.s
+
+# target to generate assembly for a file
+src/LARE/Skybox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/Skybox.cpp.s
+.PHONY : src/LARE/Skybox.cpp.s
+
 src/LARE/Transform.o: src/LARE/Transform.cpp.o
 .PHONY : src/LARE/Transform.o
 
@@ -453,6 +477,9 @@ help:
 	@echo "... src/LARE/Shader.o"
 	@echo "... src/LARE/Shader.i"
 	@echo "... src/LARE/Shader.s"
+	@echo "... src/LARE/Skybox.o"
+	@echo "... src/LARE/Skybox.i"
+	@echo "... src/LARE/Skybox.s"
 	@echo "... src/LARE/Transform.o"
 	@echo "... src/LARE/Transform.i"
 	@echo "... src/LARE/Transform.s"

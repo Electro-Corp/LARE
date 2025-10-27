@@ -104,6 +104,9 @@ Mesh Model::processMesh(aiMesh* mesh, const aiScene* scene){
 
         std::vector<Texture> normalMaps = loadMatTexes(mat, aiTextureType_HEIGHT, "texture_normal");
         texes.insert(texes.end(), normalMaps.begin(), normalMaps.end());
+
+        std::vector<Texture> roughMaps = loadMatTexes(mat, aiTextureType_UNKNOWN, "texture_roughness");
+        texes.insert(texes.end(), roughMaps.begin(), roughMaps.end());
     }
 
     return Mesh(verts, inds, texes);

@@ -26,5 +26,7 @@ class Shader{
         static void setVec3(int id, const std::string &name, const glm::vec3 &value);
 
         static void setVec4(int id, const std::string &name, const glm::vec4 &value);
+
+        static void setMat4(int id, const std::string &name, const glm::mat4 &value);
 };
 }

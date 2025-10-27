@@ -60,6 +60,11 @@
         "sstream": "cpp",
         "stop_token": "cpp",
         "thread": "cpp",
-        "cinttypes": "cpp"
+        "cinttypes": "cpp",
+        "bitset": "cpp",
+        "unordered_set": "cpp",
+        "optional": "cpp",
+        "shared_mutex": "cpp",
+        "variant": "cpp"
     }
 }

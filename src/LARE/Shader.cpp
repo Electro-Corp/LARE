@@ -38,4 +38,9 @@ void Shader::setVec4(int id, const std::string &name, const glm::vec4 &value){
     glUniform4fv(glGetUniformLocation(id, name.c_str()), 1, &value[0]); 
 }
 
+void Shader::setMat4(int id, const std::string &name, const glm::mat4 &value){
+    glUniformMatrix4fv(glGetUniformLocation(id, name.c_str()), 1, GL_FALSE, &value[0][0]);
+}
+
+
 } // LARE

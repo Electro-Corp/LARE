@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o.d"
   "CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o"
   "CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o.d"
+  "CMakeFiles/LARE.dir/src/LARE/Skybox.cpp.o"
+  "CMakeFiles/LARE.dir/src/LARE/Skybox.cpp.o.d"
   "CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o"
   "CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o.d"
   "CMakeFiles/LARE.dir/src/main.cpp.o"

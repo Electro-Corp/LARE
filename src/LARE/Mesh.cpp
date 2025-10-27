@@ -66,6 +66,7 @@ void Mesh::drawMesh(unsigned int shaderProgram, Transform transform, Camera* cam
     unsigned int diffuseN = 1;
     unsigned int specN = 1;
     unsigned int normalN = 1;
+    unsigned int roughN = 1;
     for(int i = 0; i < textures.size(); i++){
         glActiveTexture(GL_TEXTURE0 + i);
         std::string num;
@@ -77,6 +78,8 @@ void Mesh::drawMesh(unsigned int shaderProgram, Transform transform, Camera* cam
             num = std::to_string(specN++);
         }else if (name == "texture_normal"){
             num = std::to_string(normalN++);
+        }else if(name == "texture_roughness"){
+            num = std::to_string(roughN++);
         }
         int matLocation = glGetUniformLocation(shaderProgram, std::string{"material." + name + num}.c_str());
         glUniform1i(matLocation, i);

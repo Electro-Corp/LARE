@@ -4,6 +4,8 @@
 
 #include <LARE.hpp>
 #include <Light.hpp>
+#include <Skybox.hpp>
+#include <Transform.hpp>
 
 #define GLM_FORCE_RADIANS
 #include <glm/glm.hpp>
@@ -15,19 +17,23 @@ int main(){
     LARE::EngineOptions eOptions{"LARE Test", 800, 600, 4};
     LARE::LARE engine(eOptions);
 
+    // Load skybox
+    LARE::Skybox skybox("assets/day_skybox", "jpg");
+    engine.getRenderer()->setSkybox(&skybox);
+
     LARE::Scene* testScene = new LARE::Scene("Test Scene 1");
 
     LARE::Object object("Test Object 1");
     object.model = new LARE::Model(&object, "assets/backpack/backpack.obj");
-    object.vertexShader = LARE::Shader("shaders/vert.gl");
-    object.fragmentShader = LARE::Shader("shaders/frag.gl");
+    object.vertexShader = LARE::Shader("assets/shaders/vert.gl");
+    object.fragmentShader = LARE::Shader("assets/shaders/frag.gl");
     object.script = engine.getScriptMan()->initScript("assets/scripts/testObj.lua", &object);
 
     //                           amibient             specular             diffuse
-    LARE::Light lightBulb({0.05f, 0.05f, 0.06f}, {1.0f, 1.0f, 1.0f}, {0.5f, 0.5f, 0.5f});
+    LARE::Light lightBulb({0.05f, 0.05f, 0.05f}, {0.1f, 0.1f, 0.1f}, {0.5f, 0.5f, 0.5f});
     lightBulb.model = new LARE::Model(&lightBulb, "assets/backpack/backpack.obj");
-    lightBulb.vertexShader = LARE::Shader("shaders/vert_uni.gl");
-    lightBulb.fragmentShader = LARE::Shader("shaders/frag_uni.gl");
+    lightBulb.vertexShader = LARE::Shader("assets/shaders/vert_uni.gl");
+    lightBulb.fragmentShader = LARE::Shader("assets/shaders/frag_uni.gl");
 
     testScene->addObject(&object);
     testScene->addObject(&lightBulb);
@@ -55,8 +61,8 @@ int main(){
 
     engine.getRenderer()->setCamera(&camera);
 
-    object.transform.Rotate(45, {0.5f, 0.0f, 1.0f});
-    object.transform.Scale({0.6f, 0.6f, 0.6f});
+    //object.transform.Rotate(45, {0.5f, 0.0f, 1.0f});
+    //object.transform.Scale({0.6f, 0.6f, 0.6f});
 
     lightBulb.transform.Translate({0.5f, 0.0f, 1.0f});
     lightBulb.transform.Scale({0.03f, 0.031f, 0.03f});
@@ -69,12 +75,11 @@ int main(){
 
         // Update camera
         camera.camData = LARE::CameraData{};
-        camera.camData.model = glm::rotate(glm::mat4(0.5f), glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f));
-        camera.camData.view = glm::lookAt(glm::vec3(2.0f, 2.0f, 2.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+        camera.camData.model = glm::mat4(1.0f);//glm::rotate(glm::mat4(0.5f), glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+        camera.camData.view = glm::lookAt(glm::vec3(camera.position.x, camera.position.y, camera.position.z), glm::vec3(camera.position.x, camera.position.y, camera.position.z) + glm::vec3(0.0f, 0.0f, -1.0f), glm::vec3(0.0f, 1.0f, 0.0f));
         camera.pAngle = 45;
 
         object.update();
-
 
         if(engine.Tick(testScene) == -1){
             break;

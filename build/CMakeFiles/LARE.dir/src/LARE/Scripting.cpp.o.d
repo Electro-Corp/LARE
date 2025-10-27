@@ -460,7 +460,9 @@ CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o: \
  /usr/include/assimp/camera.h /usr/include/assimp/material.h \
  /usr/include/assimp/material.inl /usr/include/assimp/anim.h \
  /usr/include/assimp/metadata.h /usr/include/assimp/postprocess.h \
- /usr/include/lua5.1/lua.h /usr/include/lua5.1/luaconf.h \
+ /home/segfault/LARE/src/LARE/Skybox.hpp \
+ /home/segfault/LARE/thirdPartyInc/glad.h /usr/include/lua5.1/lua.h \
+ /usr/include/lua5.1/luaconf.h \
  /usr/include/x86_64-linux-gnu/lua5.1-deb-multiarch.h \
  /usr/include/lua5.1/lauxlib.h /usr/include/lua5.1/lua.h \
  /usr/include/lua5.1/lualib.h \

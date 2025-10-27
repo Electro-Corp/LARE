@@ -461,6 +461,8 @@ CMakeFiles/LARE.dir/src/main.cpp.o: /home/segfault/LARE/src/main.cpp \
  /usr/include/assimp/camera.h /usr/include/assimp/material.h \
  /usr/include/assimp/material.inl /usr/include/assimp/anim.h \
  /usr/include/assimp/metadata.h /usr/include/assimp/postprocess.h \
+ /home/segfault/LARE/src/LARE/Skybox.hpp \
+ /home/segfault/LARE/thirdPartyInc/glad.h \
  /home/segfault/LARE/src/LARE/Scripting.hpp /usr/include/lua5.1/lua.h \
  /usr/include/lua5.1/luaconf.h \
  /usr/include/x86_64-linux-gnu/lua5.1-deb-multiarch.h \

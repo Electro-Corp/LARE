@@ -73,9 +73,27 @@ int Renderer::UpdateScene(Scene* scene){
                 Shader::setVec3(id, "light.diffuse", Transform::internalToGLM(scene->lights[0]->diffuse));
                 Shader::setVec3(id, "light.position", scene->lights[0]->transform.getPosition());
             }
+            if(skyBox != nullptr){
+                glBindTexture(GL_TEXTURE_CUBE_MAP, skyBox->cubeMapTex);
+            }
 		    gm->model->drawModel(cam);
         }
 	}
+
+    // Draw our skybox (if we got one)
+    if(skyBox != nullptr){
+        glDepthFunc(GL_LEQUAL);
+        glUseProgram(skyBox->shaderID);  
+        Shader::setMat4(skyBox->shaderID, "view", glm::mat4(glm::mat3(cam->camData.view)));  
+        Shader::setMat4(skyBox->shaderID, "proj", cam->camData.proj);
+        // Render the cube
+        glBindVertexArray(skyBox->skyboxVAO);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_CUBE_MAP, skyBox->cubeMapTex);
+        glDrawArrays(GL_TRIANGLES, 0, 36);
+        glBindVertexArray(0);
+        glDepthFunc(GL_LESS);
+    }
 
     glfwSwapBuffers(window);
     glfwPollEvents();
@@ -124,7 +142,8 @@ void Renderer::GenerateShaders(Object* object){
 
     LOG(INFO, "LOG_INFO") << "Shader program for " << object->getName() << " created.\n";
 
-    object->model->initMeshes();
+    if(object->model)
+        object->model->initMeshes();
 }
 
 int Renderer::checkShaderComp(unsigned int shader) {

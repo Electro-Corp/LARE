@@ -13,6 +13,12 @@
 },
 {
   "directory": "/home/segfault/LARE/build",
+  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Skybox.cpp.o -c /home/segfault/LARE/src/LARE/Skybox.cpp",
+  "file": "/home/segfault/LARE/src/LARE/Skybox.cpp",
+  "output": "CMakeFiles/LARE.dir/src/LARE/Skybox.cpp.o"
+},
+{
+  "directory": "/home/segfault/LARE/build",
   "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o -c /home/segfault/LARE/src/LARE/Scripting.cpp",
   "file": "/home/segfault/LARE/src/LARE/Scripting.cpp",
   "output": "CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o"

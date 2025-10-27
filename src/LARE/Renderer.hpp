@@ -14,6 +14,7 @@
 #include <Model.hpp>
 #include <Object.hpp>
 #include <Camera.hpp>
+#include <Skybox.hpp>
 
 namespace LARE{
     typedef struct {
@@ -29,6 +30,7 @@ namespace LARE{
         GLFWwindow* window;
 
         ClearColor clearColor{0.0f, 0.0f, 0.0f, 255.0f};
+        Skybox* skyBox;
 
         int checkShaderComp(unsigned int shader);
 
@@ -40,11 +42,17 @@ namespace LARE{
 
         void GenerateShaders(Object* object);
 
+        void GenerateObjectShader(Object* object);
+
         // Resize viewport
         void ResizeWindow();
 
         void setCamera(Camera* cam){
             this->cam = cam;
+        }
+
+        void setSkybox(Skybox* box){
+            this->skyBox = box;
         }
     };
 

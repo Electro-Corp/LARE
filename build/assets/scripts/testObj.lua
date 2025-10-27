@@ -1,5 +1,7 @@
 function init(object)
-
+    object.transform.Scale(object.transform, Vector3(0.1, 0.1, 0.1))
+    object.transform.Rotate(object.transform, 45, Vector3(0.5, 0.0, 1.0))
+    object.transform.Translate(object.transform, Vector3(-1.0, -2.0, -5.0))
 end
 
 count = 0
