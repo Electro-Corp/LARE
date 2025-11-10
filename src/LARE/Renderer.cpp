@@ -42,6 +42,10 @@ Renderer::Renderer(std::string wTitle, int w, int h, int alias){
     glEnable(GL_MULTISAMPLE);
     // Enable SRGB Gamma correction
     glEnable(GL_FRAMEBUFFER_SRGB);
+    // Enable culling
+    glEnable(GL_CULL_FACE);
+    // Enable stencil testing 
+    glEnable(GL_STENCIL_TEST);
 
     // Setup resize
     glfwSetFramebufferSizeCallback(window, setupWindowBuffer);  
@@ -53,7 +57,7 @@ int Renderer::UpdateScene(Scene* scene){
     }
     // Clear color
     glClearColor(clearColor.r / 255.0f, clearColor.g / 255.0f, clearColor.b / 255.0f, clearColor.a / 255.0f);
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 
     cam->camData.proj = glm::perspective(glm::radians((float)cam->pAngle), (float)width / (float)height, 0.1f, 100.0f);
 
@@ -79,6 +83,23 @@ int Renderer::UpdateScene(Scene* scene){
 		    gm->model->drawModel(cam);
         }
 	}
+    
+    // Shadow volume (Carmack's Reverse)
+    // Disable writing to color buffer
+    /*glColorMask(GL_FALSE, GL_FALSE, GL_FALSE, GL_FALSE);
+    // Disable depth buffer
+    glDepthMask(GL_FALSE);
+
+    glCullFace(GL_FRONT);
+    glStencilOp(GL_INCR, GL_ZERO, GL_ZERO);
+    glStencilFunc(GL_EQUAL, 1, 0xFF);
+
+    glCullFace(GL_BACK);
+
+    // Re-enable color buffer
+    glColorMask(GL_TRUE, GL_TRUE, GL_TRUE, GL_TRUE);
+    // Re-enable depth buffer
+    glDepthMask(GL_TRUE);*/
 
     // Draw our skybox (if we got one)
     if(skyBox != nullptr){
