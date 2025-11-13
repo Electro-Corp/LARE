@@ -1,67 +1,67 @@
 [
 {
   "directory": "/home/segfault/LARE/build",
-  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o -c /home/segfault/LARE/src/LARE/Renderer.cpp",
+  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -fno-math-errno -fno-trapping-math -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o -c /home/segfault/LARE/src/LARE/Renderer.cpp",
   "file": "/home/segfault/LARE/src/LARE/Renderer.cpp",
   "output": "CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o"
 },
 {
   "directory": "/home/segfault/LARE/build",
-  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o -c /home/segfault/LARE/src/LARE/Shader.cpp",
+  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -fno-math-errno -fno-trapping-math -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o -c /home/segfault/LARE/src/LARE/Shader.cpp",
   "file": "/home/segfault/LARE/src/LARE/Shader.cpp",
   "output": "CMakeFiles/LARE.dir/src/LARE/Shader.cpp.o"
 },
 {
   "directory": "/home/segfault/LARE/build",
-  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Skybox.cpp.o -c /home/segfault/LARE/src/LARE/Skybox.cpp",
+  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -fno-math-errno -fno-trapping-math -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Skybox.cpp.o -c /home/segfault/LARE/src/LARE/Skybox.cpp",
   "file": "/home/segfault/LARE/src/LARE/Skybox.cpp",
   "output": "CMakeFiles/LARE.dir/src/LARE/Skybox.cpp.o"
 },
 {
   "directory": "/home/segfault/LARE/build",
-  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o -c /home/segfault/LARE/src/LARE/Scripting.cpp",
+  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -fno-math-errno -fno-trapping-math -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o -c /home/segfault/LARE/src/LARE/Scripting.cpp",
   "file": "/home/segfault/LARE/src/LARE/Scripting.cpp",
   "output": "CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o"
 },
 {
   "directory": "/home/segfault/LARE/build",
-  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o -c /home/segfault/LARE/src/LARE/Transform.cpp",
+  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -fno-math-errno -fno-trapping-math -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o -c /home/segfault/LARE/src/LARE/Transform.cpp",
   "file": "/home/segfault/LARE/src/LARE/Transform.cpp",
   "output": "CMakeFiles/LARE.dir/src/LARE/Transform.cpp.o"
 },
 {
   "directory": "/home/segfault/LARE/build",
-  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o -c /home/segfault/LARE/src/LARE/Scene.cpp",
+  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -fno-math-errno -fno-trapping-math -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o -c /home/segfault/LARE/src/LARE/Scene.cpp",
   "file": "/home/segfault/LARE/src/LARE/Scene.cpp",
   "output": "CMakeFiles/LARE.dir/src/LARE/Scene.cpp.o"
 },
 {
   "directory": "/home/segfault/LARE/build",
-  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Object.cpp.o -c /home/segfault/LARE/src/LARE/Object.cpp",
+  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -fno-math-errno -fno-trapping-math -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Object.cpp.o -c /home/segfault/LARE/src/LARE/Object.cpp",
   "file": "/home/segfault/LARE/src/LARE/Object.cpp",
   "output": "CMakeFiles/LARE.dir/src/LARE/Object.cpp.o"
 },
 {
   "directory": "/home/segfault/LARE/build",
-  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Light.cpp.o -c /home/segfault/LARE/src/LARE/Light.cpp",
+  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -fno-math-errno -fno-trapping-math -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Light.cpp.o -c /home/segfault/LARE/src/LARE/Light.cpp",
   "file": "/home/segfault/LARE/src/LARE/Light.cpp",
   "output": "CMakeFiles/LARE.dir/src/LARE/Light.cpp.o"
 },
 {
   "directory": "/home/segfault/LARE/build",
-  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.o -c /home/segfault/LARE/src/LARE/Mesh.cpp",
+  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -fno-math-errno -fno-trapping-math -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.o -c /home/segfault/LARE/src/LARE/Mesh.cpp",
   "file": "/home/segfault/LARE/src/LARE/Mesh.cpp",
   "output": "CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.o"
 },
 {
   "directory": "/home/segfault/LARE/build",
-  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Model.cpp.o -c /home/segfault/LARE/src/LARE/Model.cpp",
+  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -fno-math-errno -fno-trapping-math -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Model.cpp.o -c /home/segfault/LARE/src/LARE/Model.cpp",
   "file": "/home/segfault/LARE/src/LARE/Model.cpp",
   "output": "CMakeFiles/LARE.dir/src/LARE/Model.cpp.o"
 },
 {
   "directory": "/home/segfault/LARE/build",
-  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o -c /home/segfault/LARE/src/LARE/LARE.cpp",
+  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -fno-math-errno -fno-trapping-math -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o -c /home/segfault/LARE/src/LARE/LARE.cpp",
   "file": "/home/segfault/LARE/src/LARE/LARE.cpp",
   "output": "CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o"
 },
@@ -73,7 +73,7 @@
 },
 {
   "directory": "/home/segfault/LARE/build",
-  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/main.cpp.o -c /home/segfault/LARE/src/main.cpp",
+  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -fno-math-errno -fno-trapping-math -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/main.cpp.o -c /home/segfault/LARE/src/main.cpp",
   "file": "/home/segfault/LARE/src/main.cpp",
   "output": "CMakeFiles/LARE.dir/src/main.cpp.o"
 }

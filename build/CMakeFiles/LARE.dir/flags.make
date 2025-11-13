@@ -13,5 +13,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1
 
-CXX_FLAGS =  -O2 -g -g -std=gnu++17
+CXX_FLAGS =  -O2 -g -fno-math-errno -fno-trapping-math -g -std=gnu++17
 

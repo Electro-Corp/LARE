@@ -3,7 +3,7 @@ project(LARE)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -g")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -g -fno-math-errno -fno-trapping-math")
 
 set(BUILD_WSI_XLIB_SUPPORT OFF)
 

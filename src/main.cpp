@@ -11,14 +11,14 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
-#include <chrono>
+#include <ono>
 
 int main(){
     LARE::EngineOptions eOptions{"LARE Test", 800, 600, 4};
     LARE::LARE engine(eOptions);
 
     // Load skybox
-    LARE::Skybox skybox("assets/day_skybox", "jpg");
+    LARE::Skybox skybox("assets/night_skybox", "png");
     engine.getRenderer()->setSkybox(&skybox);
 
     LARE::Scene* testScene = new LARE::Scene("Test Scene 1");
@@ -30,10 +30,12 @@ int main(){
     object.script = engine.getScriptMan()->initScript("assets/scripts/testObj.lua", &object);
 
     //                           amibient             specular             diffuse
-    LARE::Light lightBulb({0.05f, 0.05f, 0.05f}, {0.1f, 0.1f, 0.1f}, {0.5f, 0.5f, 0.5f});
+    LARE::Light lightBulb({0.005f, 0.005f, 0.005f}, {0.05f, 0.05f, 0.05f}, {0.2f, 0.2f, 0.2f});
     lightBulb.model = new LARE::Model(&lightBulb, "assets/backpack/backpack.obj");
     lightBulb.vertexShader = LARE::Shader("assets/shaders/vert_uni.gl");
     lightBulb.fragmentShader = LARE::Shader("assets/shaders/frag_uni.gl");
+    lightBulb.script = engine.getScriptMan()->initScript("assets/scripts/testLight.lua", &lightBulb);
+
 
     testScene->addObject(&object);
     testScene->addObject(&lightBulb);
@@ -53,6 +55,7 @@ int main(){
 
     // Init script
     object.initScript();
+    lightBulb.initScript();
 
     // Camera init
     LARE::Camera camera;
@@ -60,12 +63,6 @@ int main(){
     camera.position = LARE::Vector3(0.0f, 0.0f, 0.0f);
 
     engine.getRenderer()->setCamera(&camera);
-
-    //object.transform.Rotate(45, {0.5f, 0.0f, 1.0f});
-    //object.transform.Scale({0.6f, 0.6f, 0.6f});
-
-    lightBulb.transform.Translate({0.5f, 0.0f, 1.0f});
-    lightBulb.transform.Scale({0.03f, 0.031f, 0.03f});
 
     while(1){
         // Update time
@@ -80,6 +77,7 @@ int main(){
         camera.pAngle = 45;
 
         object.update();
+        lightBulb.update();
 
         if(engine.Tick(testScene) == -1){
             break;

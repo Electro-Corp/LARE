@@ -34,6 +34,7 @@ Renderer::Renderer(std::string wTitle, int w, int h, int alias){
         exit(-1);
     }
 
+    LOG(INFO, "LOG_INFO") << "Init GL enables...\n";
     // init viewport
     glViewport(0, 0, width, height);
     // Enable depth testing
@@ -61,7 +62,7 @@ int Renderer::UpdateScene(Scene* scene){
 
     cam->camData.proj = glm::perspective(glm::radians((float)cam->pAngle), (float)width / (float)height, 0.1f, 100.0f);
 
-    // Render each object
+    // Render each object shadowed
 	for (auto& gm : scene->objects) {
         // Does it actually have something to render
         if(gm->model){
