@@ -11,5 +11,8 @@ function update(object)
 end
 
 function onKeyPressed(object, key)
-    print(key)
+    -- printing test
+    if key == "h" then
+        print("h pressed")
+    end
 end

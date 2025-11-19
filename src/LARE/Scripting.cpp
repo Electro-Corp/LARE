@@ -86,7 +86,16 @@ void ScriptManager::exposeLAREToScript(lua_State* luaState){
 void ScriptManager::updateScriptKeys(int key){
     for(auto& script : scripts){
         if(script->keyback){
-            script->keypressed(script->gm, key);
+            // Is it normal
+            if(key >= 39 && key <=92){
+                script->keypressed(script->gm, glfwGetKeyName(key, 0));
+            }else{
+                switch(key){
+                    default:
+                        script->keypressed(script->gm, "UnknownKey");
+                        break;
+                }
+            }
         }
     }
 }

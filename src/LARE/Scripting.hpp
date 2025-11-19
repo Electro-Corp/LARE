@@ -49,8 +49,8 @@ namespace LARE{
         }
 
         template <typename T>                                                                                        
-        void keypressed(T* cast, int key){
-            if(keyback){
+        void keypressed(T* cast, const char* key){
+            if(keyback){    
                 luabridge::LuaRef back = luabridge::getGlobal(luaState, "onKeyPressed");
                 back((T*)gm, key);
             }
