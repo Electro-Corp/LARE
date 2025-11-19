@@ -1,11 +1,13 @@
 #include <Renderer.hpp>
+#include <LARE.hpp>
 
 namespace LARE{
 
-Renderer::Renderer(std::string wTitle, int w, int h, int alias){
+Renderer::Renderer(std::string wTitle, int w, int h, int alias, LARE* engine){
     this->windowTitle = wTitle;
     this->width = w;
     this->height = h;
+    this->engine = engine;
 
     LOG(INFO, "LOG_INFO") << "Creating window (" << w << ", " << h << ")\n";
 
@@ -50,6 +52,9 @@ Renderer::Renderer(std::string wTitle, int w, int h, int alias){
 
     // Setup resize
     glfwSetFramebufferSizeCallback(window, setupWindowBuffer);  
+
+    // Setup keycall back
+    glfwSetKeyCallback(window, engine->keyCallback);
 }
 
 int Renderer::UpdateScene(Scene* scene){

@@ -11,6 +11,7 @@
 #include <string>
 
 namespace LARE{
+
     typedef struct{
         std::string windowTitle;
         int width, height, alias;
@@ -32,6 +33,10 @@ namespace LARE{
         ScriptManager* getScriptMan(){
             return scriptManager;
         }
+
+        // Key callback
+        static void keyCallback(GLFWwindow* win, int key, int scancode, int action, int mods);
+
 
         ~LARE();
     };

@@ -2,6 +2,9 @@
 ## Lightweight Advanced Rendering Engine
 LARE is a lightweight rendering engine utilizing OpenGL that is built to be flexible, powerful, fast to prototype, and easily extendable. <br>
 
+## TODO:
+remove the build folder from github....
+
 ## Build
 ```
 mkdir build

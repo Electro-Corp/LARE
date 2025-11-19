@@ -5,6 +5,7 @@ namespace LARE{
 Script::Script(lua_State* state, std::string sourceLocation, Object* gm){
     this->luaState = state;
     this->gm = gm;
+    keyback = 0;
     // Load the script
     int scriptLoadStatus = luaL_dofile(state, sourceLocation.c_str());
     if(scriptLoadStatus != 0){
@@ -14,6 +15,11 @@ Script::Script(lua_State* state, std::string sourceLocation, Object* gm){
     // Make sure init and update exist
     assert(luabridge::getGlobal(luaState, "init").isNil() != true);
     assert(luabridge::getGlobal(luaState, "update").isNil() != true);
+
+    // Input update
+    if(!luabridge::getGlobal(luaState, "onKeyPressed").isNil()){
+        keyback = 1;
+    }
 }
 
 
@@ -30,7 +36,10 @@ Script* ScriptManager::initScript(std::string path, Object* root){
     luaL_openlibs(tmp);
     exposeLAREToScript(tmp);
 
-    return new Script(tmp, path, root);
+    Script* s = new Script(tmp, path, root);
+    this->scripts.push_back(s);
+
+    return s;
 }
 
 void ScriptManager::exposeLAREToScript(lua_State* luaState){
@@ -72,6 +81,14 @@ void ScriptManager::exposeLAREToScript(lua_State* luaState){
         .endClass();
     
     LOG(INFO, "LOG_INFO") << "Exposing finished...\n";
+}
+
+void ScriptManager::updateScriptKeys(int key){
+    for(auto& script : scripts){
+        if(script->keyback){
+            script->keypressed(script->gm, key);
+        }
+    }
 }
 
 } // LARE

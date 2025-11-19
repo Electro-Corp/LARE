@@ -28,6 +28,7 @@ namespace LARE{
 
     public:
         Object* gm;
+        int keyback;
 
         Script(lua_State* state, std::string sourceLocation, Object* gm);
 
@@ -43,21 +44,32 @@ namespace LARE{
 
         template <typename T>
         void init(T* cast){
-            luabridge::LuaRef initFunc = luabridge::getGlobal(luaState, "init");;
+            luabridge::LuaRef initFunc = luabridge::getGlobal(luaState, "init");
             initFunc((T*)gm);
         }
 
+        template <typename T>                                                                                        
+        void keypressed(T* cast, int key){
+            if(keyback){
+                luabridge::LuaRef back = luabridge::getGlobal(luaState, "onKeyPressed");
+                back((T*)gm, key);
+            }
+        }
     };
 
     class ScriptManager{
     private:
         std::unique_ptr<Renderer> rendererGlob;
+
+        std::vector<Script*> scripts;
     public:
         ScriptManager(Renderer* rendererPtr);
 
         Script* initScript(std::string path, Object* root);
 
         void exposeLAREToScript(lua_State* luaState);
+
+        void updateScriptKeys(int key);
     };
 }  // LARE
 

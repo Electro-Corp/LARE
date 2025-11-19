@@ -2609,15 +2609,40 @@ CMakeFiles/LARE.dir/src/LARE/Object.cpp.o: /home/segfault/LARE/src/LARE/Object.c
 
 CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o: /home/segfault/LARE/src/LARE/Renderer.cpp \
   /home/segfault/LARE/src/LARE/Camera.hpp \
+  /home/segfault/LARE/src/LARE/LARE.hpp \
   /home/segfault/LARE/src/LARE/Light.hpp \
   /home/segfault/LARE/src/LARE/Mesh.hpp \
   /home/segfault/LARE/src/LARE/Model.hpp \
   /home/segfault/LARE/src/LARE/Object.hpp \
   /home/segfault/LARE/src/LARE/Renderer.hpp \
   /home/segfault/LARE/src/LARE/Scene.hpp \
+  /home/segfault/LARE/src/LARE/Scripting.hpp \
   /home/segfault/LARE/src/LARE/Shader.hpp \
   /home/segfault/LARE/src/LARE/Skybox.hpp \
   /home/segfault/LARE/src/LARE/Transform.hpp \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/LuaBridge.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/CFunctions.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/ClassInfo.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Config.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Enum.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Errors.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Expected.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/FlagSet.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/FuncTraits.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Globals.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Invoke.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Iterator.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/LuaException.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/LuaHelpers.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/LuaRef.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Namespace.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Options.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Overload.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Result.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/ScopeGuard.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Stack.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/TypeTraits.h \
+  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Userdata.h \
   /home/segfault/LARE/thirdPartyInc/aixlog.hpp \
   /home/segfault/LARE/thirdPartyInc/glad.h \
   /home/segfault/LARE/thirdPartyInc/glad/glad.h \
@@ -2980,6 +3005,7 @@ CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o: /home/segfault/LARE/src/LARE/Render
   /usr/include/c++/11/memory \
   /usr/include/c++/11/mutex \
   /usr/include/c++/11/new \
+  /usr/include/c++/11/optional \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/pstl/execution_defs.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
@@ -3010,6 +3036,7 @@ CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o: /home/segfault/LARE/src/LARE/Render
   /usr/include/c++/11/typeinfo \
   /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/utility \
+  /usr/include/c++/11/variant \
   /usr/include/c++/11/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
@@ -3020,6 +3047,10 @@ CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o: /home/segfault/LARE/src/LARE/Render
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
+  /usr/include/lua5.1/lauxlib.h \
+  /usr/include/lua5.1/lua.h \
+  /usr/include/lua5.1/luaconf.h \
+  /usr/include/lua5.1/lualib.h \
   /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -3133,6 +3164,7 @@ CMakeFiles/LARE.dir/src/LARE/Renderer.cpp.o: /home/segfault/LARE/src/LARE/Render
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/lua5.1-deb-multiarch.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \

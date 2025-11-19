@@ -17,6 +17,8 @@
 #include <Skybox.hpp>
 
 namespace LARE{
+    class LARE;
+
     typedef struct {
         float r,g,b,a;
     } ClearColor;
@@ -35,8 +37,10 @@ namespace LARE{
         int checkShaderComp(unsigned int shader);
 
         Camera* cam;
+
+        LARE* engine;
     public:
-        Renderer(std::string wTitle, int w, int h, int alias);
+        Renderer(std::string wTitle, int w, int h, int alias, LARE* engine);
 
         int UpdateScene(Scene* scene);
 
