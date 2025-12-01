@@ -58,6 +58,10 @@ namespace LARE{
         void setSkybox(Skybox* box){
             this->skyBox = box;
         }
+
+        GLFWwindow* getWindow(){
+            return window;
+        }
     };
 
     static void setupWindowBuffer(GLFWwindow* win, int w, int h); 

@@ -129,6 +129,30 @@ LARE/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/build
 .PHONY : LARE/fast
 
+src/LARE/Camera.o: src/LARE/Camera.cpp.o
+.PHONY : src/LARE/Camera.o
+
+# target to build an object file
+src/LARE/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/Camera.cpp.o
+.PHONY : src/LARE/Camera.cpp.o
+
+src/LARE/Camera.i: src/LARE/Camera.cpp.i
+.PHONY : src/LARE/Camera.i
+
+# target to preprocess a source file
+src/LARE/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/Camera.cpp.i
+.PHONY : src/LARE/Camera.cpp.i
+
+src/LARE/Camera.s: src/LARE/Camera.cpp.s
+.PHONY : src/LARE/Camera.s
+
+# target to generate assembly for a file
+src/LARE/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LARE.dir/build.make CMakeFiles/LARE.dir/src/LARE/Camera.cpp.s
+.PHONY : src/LARE/Camera.cpp.s
+
 src/LARE/LARE.o: src/LARE/LARE.cpp.o
 .PHONY : src/LARE/LARE.o
 
@@ -450,6 +474,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... LARE"
+	@echo "... src/LARE/Camera.o"
+	@echo "... src/LARE/Camera.i"
+	@echo "... src/LARE/Camera.s"
 	@echo "... src/LARE/LARE.o"
 	@echo "... src/LARE/LARE.i"
 	@echo "... src/LARE/LARE.s"

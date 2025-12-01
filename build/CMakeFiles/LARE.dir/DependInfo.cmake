@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/segfault/LARE/thirdPartyInc/glad.c" "CMakeFiles/LARE.dir/thirdPartyInc/glad.c.o" "gcc" "CMakeFiles/LARE.dir/thirdPartyInc/glad.c.o.d"
+  "/home/segfault/LARE/src/LARE/Camera.cpp" "CMakeFiles/LARE.dir/src/LARE/Camera.cpp.o" "gcc" "CMakeFiles/LARE.dir/src/LARE/Camera.cpp.o.d"
   "/home/segfault/LARE/src/LARE/LARE.cpp" "CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o" "gcc" "CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o.d"
   "/home/segfault/LARE/src/LARE/Light.cpp" "CMakeFiles/LARE.dir/src/LARE/Light.cpp.o" "gcc" "CMakeFiles/LARE.dir/src/LARE/Light.cpp.o.d"
   "/home/segfault/LARE/src/LARE/Mesh.cpp" "CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.o" "gcc" "CMakeFiles/LARE.dir/src/LARE/Mesh.cpp.o.d"

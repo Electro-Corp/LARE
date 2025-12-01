@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/LARE.dir/src/LARE/Camera.cpp.o"
+  "CMakeFiles/LARE.dir/src/LARE/Camera.cpp.o.d"
   "CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o"
   "CMakeFiles/LARE.dir/src/LARE/LARE.cpp.o.d"
   "CMakeFiles/LARE.dir/src/LARE/Light.cpp.o"

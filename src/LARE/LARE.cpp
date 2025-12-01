@@ -12,15 +12,23 @@ LARE::LARE(EngineOptions options){
     LOG(INFO, "LOG_INFO") << "Creating renderer...\n";
     this->renderer = new Renderer(options.windowTitle, options.width, options.height, options.alias, this);
     LOG(INFO, "LOG_INFO") << "Creating script manager...\n";
-    this->scriptManager = new ScriptManager(renderer);
+    this->scriptManager = new ScriptManager(renderer, this);
 }
 
 int LARE::Tick(Scene* scene){
     return this->renderer->UpdateScene(scene);
 }
 
+void LARE::captureMouse(){
+    glfwSetInputMode(renderer->getWindow(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+}
+
 void LARE::keyCallback(GLFWwindow* win, int key, int scancode, int action, int mods){
     currentLareInstance->getScriptMan()->updateScriptKeys(key);
+}
+
+void LARE::mouseCallback(GLFWwindow* win, double xPos, double yPos){
+    currentLareInstance->mousePosition = Vector2(xPos, yPos);
 }
 
 LARE::~LARE(){

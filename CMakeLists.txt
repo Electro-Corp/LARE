@@ -23,6 +23,7 @@ set(SOURCES
     src/LARE/Renderer.cpp
     src/LARE/Shader.cpp
     src/LARE/Skybox.cpp
+    src/LARE/Camera.cpp
     # Engine
     src/LARE/Scripting.cpp
     src/LARE/Transform.cpp

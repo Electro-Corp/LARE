@@ -336,7 +336,6 @@ CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
  /home/segfault/LARE/thirdPartyInc/glm/gtc/type_ptr.inl \
  /home/segfault/LARE/src/LARE/Camera.hpp \
- /home/segfault/LARE/src/LARE/Light.hpp \
  /home/segfault/LARE/src/LARE/Object.hpp \
  /home/segfault/LARE/src/LARE/Shader.hpp /usr/include/c++/11/string \
  /usr/include/c++/11/bits/stringfwd.h \
@@ -441,8 +440,9 @@ CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/syslog-path.h \
  /usr/include/x86_64-linux-gnu/bits/syslog.h \
  /home/segfault/LARE/thirdPartyInc/glad/glad.h \
- /usr/include/KHR/khrplatform.h /home/segfault/LARE/src/LARE/Renderer.hpp \
- /usr/include/GLFW/glfw3.h /home/segfault/LARE/src/LARE/Scene.hpp \
+ /usr/include/KHR/khrplatform.h /home/segfault/LARE/src/LARE/Light.hpp \
+ /home/segfault/LARE/src/LARE/Renderer.hpp /usr/include/GLFW/glfw3.h \
+ /home/segfault/LARE/src/LARE/Scene.hpp \
  /home/segfault/LARE/src/LARE/Model.hpp \
  /home/segfault/LARE/src/LARE/Mesh.hpp /usr/include/assimp/Importer.hpp \
  /usr/include/assimp/types.h /usr/include/assimp/defs.h \
@@ -490,4 +490,5 @@ CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o: \
  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Iterator.h \
  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Namespace.h \
  /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/Overload.h \
- /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/ScopeGuard.h
+ /home/segfault/LARE/thirdPartyInc/LuaBridge/detail/ScopeGuard.h \
+ /home/segfault/LARE/src/LARE/LARE.hpp

@@ -10,9 +10,3 @@ function update(object)
     count = count + 0.01
 end
 
-function onKeyPressed(object, key)
-    -- printing test
-    if key == "h" then
-        print("h pressed")
-    end
-end

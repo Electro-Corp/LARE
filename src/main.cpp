@@ -58,26 +58,21 @@ int main(){
     lightBulb.initScript();
 
     // Camera init
-    LARE::Camera camera;
+    LARE::Camera camera("Main Camera");
 
     camera.position = LARE::Vector3(0.0f, 0.0f, 0.0f);
+    camera.script = engine.getScriptMan()->initScript("assets/scripts/camera.lua", &camera);
+    camera.initScript();
 
     engine.getRenderer()->setCamera(&camera);
 
+    // Capture mouse
+    engine.captureMouse();
+
     while(1){
-        // Update time
-        static auto sT = std::chrono::high_resolution_clock::now();
-        auto cT = std::chrono::high_resolution_clock::now();
-        float t = std::chrono::duration<float, std::chrono::seconds::period>(cT - sT).count();
-
-        // Update camera
-        camera.camData = LARE::CameraData{};
-        camera.camData.model = glm::mat4(1.0f);//glm::rotate(glm::mat4(0.5f), glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f));
-        camera.camData.view = glm::lookAt(glm::vec3(camera.position.x, camera.position.y, camera.position.z), glm::vec3(camera.position.x, camera.position.y, camera.position.z) + glm::vec3(0.0f, 0.0f, -1.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-        camera.pAngle = 45;
-
         object.update();
         lightBulb.update();
+        camera.update();
 
         if(engine.Tick(testScene) == -1){
             break;

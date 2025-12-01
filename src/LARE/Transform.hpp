@@ -8,6 +8,12 @@
 #include <glm/gtc/type_ptr.hpp>
 
 namespace LARE{
+    struct Vector2{
+        float x, y;
+        Vector2();
+        Vector2(float x, float y);
+    };
+
     // So you dont gotta type "glm::vec3" all the time..
     // now just do {x, y, z}
     struct Vector3{
@@ -42,8 +48,16 @@ namespace LARE{
             return glm::vec3(transform[3]);
         }
 
+        Vector3 getPositionVec3(){
+
+        }
+
         static glm::vec3 internalToGLM(Vector3 vec){
             return glm::vec3(vec.x, vec.y, vec.z);
+        }
+
+        static Vector3 glmToInternal(glm::vec3 vec){
+            return Vector3(vec.x, vec.y, vec.z);
         }
     };
 }

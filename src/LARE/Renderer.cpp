@@ -55,6 +55,7 @@ Renderer::Renderer(std::string wTitle, int w, int h, int alias, LARE* engine){
 
     // Setup keycall back
     glfwSetKeyCallback(window, engine->keyCallback);
+    glfwSetCursorPosCallback(window, engine->mouseCallback);
 }
 
 int Renderer::UpdateScene(Scene* scene){

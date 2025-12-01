@@ -19,6 +19,12 @@
 },
 {
   "directory": "/home/segfault/LARE/build",
+  "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -fno-math-errno -fno-trapping-math -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Camera.cpp.o -c /home/segfault/LARE/src/LARE/Camera.cpp",
+  "file": "/home/segfault/LARE/src/LARE/Camera.cpp",
+  "output": "CMakeFiles/LARE.dir/src/LARE/Camera.cpp.o"
+},
+{
+  "directory": "/home/segfault/LARE/build",
   "command": "/usr/bin/g++  -I/home/segfault/LARE/src/LARE -I/home/segfault/LARE/thirdPartyInc -I/usr/include/lua5.1  -O2 -g -fno-math-errno -fno-trapping-math -g -std=gnu++17 -o CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o -c /home/segfault/LARE/src/LARE/Scripting.cpp",
   "file": "/home/segfault/LARE/src/LARE/Scripting.cpp",
   "output": "CMakeFiles/LARE.dir/src/LARE/Scripting.cpp.o"

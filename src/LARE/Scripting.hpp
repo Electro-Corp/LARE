@@ -52,7 +52,7 @@ namespace LARE{
         void keypressed(T* cast, const char* key){
             if(keyback){    
                 luabridge::LuaRef back = luabridge::getGlobal(luaState, "onKeyPressed");
-                back((T*)gm, key);
+                back((T*)cast, key);
             }
         }
     };
@@ -60,10 +60,11 @@ namespace LARE{
     class ScriptManager{
     private:
         std::unique_ptr<Renderer> rendererGlob;
+        std::unique_ptr<LARE> engineGlob;
 
         std::vector<Script*> scripts;
     public:
-        ScriptManager(Renderer* rendererPtr);
+        ScriptManager(Renderer* rendererPtr, LARE* enginePtr);
 
         Script* initScript(std::string path, Object* root);
 

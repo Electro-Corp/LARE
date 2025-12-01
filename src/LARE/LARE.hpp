@@ -34,9 +34,14 @@ namespace LARE{
             return scriptManager;
         }
 
+        // INPUT 
+        Vector2 mousePosition;
+        // Capture
+        void captureMouse();
+
         // Key callback
         static void keyCallback(GLFWwindow* win, int key, int scancode, int action, int mods);
-
+        static void mouseCallback(GLFWwindow* win, double xPos, double yPos);
 
         ~LARE();
     };

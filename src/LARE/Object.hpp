@@ -36,11 +36,11 @@ namespace LARE{
 
         Object(std::string name);
 
-        void initScript();
+        virtual void initScript();
 
-        void updateScript();
+        virtual void updateScript();
 
-        void update();
+        virtual void update();
 
         std::string getName(){
             return name;
