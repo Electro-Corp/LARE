@@ -83,6 +83,8 @@ void ScriptManager::exposeLAREToScript(lua_State* luaState){
         .addProperty("position", &Camera::position, &Camera::position)
         .addProperty("front", &Camera::front, &Camera::front)
         .addProperty("pAngle", &Camera::pAngle, &Camera::pAngle)
+        .addFunction("offsetFB", &Camera::offsetFB)
+        .addFunction("offsetLR", &Camera::offsetLR)
         .endClass()
         .deriveClass<Light, Object>("Light")
         .addProperty("ambient", &Light::color, &Light::color)
@@ -92,6 +94,7 @@ void ScriptManager::exposeLAREToScript(lua_State* luaState){
     luabridge::getGlobalNamespace(luaState)
         .beginClass<LARE>("Engine")
         .addProperty("mousePosition", &LARE::mousePosition)
+        .addFunction("getCurrentFrame", &LARE::getCurrentFrame)
         .endClass();
 
     luabridge::setGlobal(luaState, engineGlob.get(), "LARE");

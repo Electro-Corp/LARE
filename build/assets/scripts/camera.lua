@@ -3,8 +3,10 @@
 zPos = 0
 hPos = 0
 
-speed = 0.01
+speed = 1
 sens = 0.1
+dTime = 0
+lastF = 0
 
 lastX = 0
 lastY = 0
@@ -13,31 +15,36 @@ firstPos = true
 yaw = 0
 pitch = 0
 
+cam = 0
+
 function init(camera) 
     camera.pAngle = 45
+    cam = camera
 end
 
 
 function update(camera)
-    camera.position.z = zPos
-    camera.position.x = hPos
+    curFrame = LARE:getCurrentFrame()
+    dTime = curFrame - lastF
+    lastF = curFrame
 
     updateMouse(camera)
 end
 
 function onKeyPressed(camera, key)
+    sSpeed = speed * dTime
     -- printing test
     if key == "w" then
-        zPos = zPos + speed;
+        cam.offsetFB(cam, sSpeed)
     end
     if key == "s" then
-        zPos = zPos - speed;
+        cam.offsetFB(cam, -1 * sSpeed)
     end
     if key == "a" then
-        hPos = hPos + speed;
+        cam.offsetLR(cam, -1 * sSpeed)
     end
     if key == "d" then
-        hPos = hPos - speed;
+        cam.offsetLR(cam, sSpeed)
     end
 end
 
@@ -70,11 +77,19 @@ function updateMouse(camera)
         pitch = -89.0
     end
 
-    dir = Vector3(0,0,0);
-    dir.x = math.cos(math.rad(yaw)) * math.cos(math.rad(pitch));
-    dir.y = math.sin(math.rad(pitch));
-    dir.z = math.sin(math.rad(yaw)) * math.cos(math.rad(pitch));
+    dir = Vector3(0,0,0)
+    dir.x = math.cos(math.rad(yaw)) * math.cos(math.rad(pitch))
+    dir.y = math.sin(math.rad(pitch))
+    dir.z = math.sin(math.rad(yaw)) * math.cos(math.rad(pitch))
 
     camera.front = dir;
+end
 
+-- Make these into a seperate file later
+function constantMul(c, v2)
+    return Vector3(c * v2.x, c * v2.y, c * v2.z)
+end
+
+function addV(v1, v2)
+    return Vector3(v1.x + v2.x, v1.y + v2.y, v1.z + v2.z)
 end

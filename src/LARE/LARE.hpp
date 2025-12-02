@@ -34,6 +34,10 @@ namespace LARE{
             return scriptManager;
         }
 
+        float getCurrentFrame(){
+            return glfwGetTime();
+        }
+
         // INPUT 
         Vector2 mousePosition;
         // Capture

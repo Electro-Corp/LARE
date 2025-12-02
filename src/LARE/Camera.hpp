@@ -23,12 +23,15 @@ namespace LARE{
 	public:
 		Camera(std::string name);
 
-		Vector3 position, front;
+		Vector3 position, front, up;
 		CameraData camData;
 		double pAngle;
 
 		void initScript() override;
 		void update() override;
 		void updateScript() override;
+
+		void offsetFB(float speed);
+		void offsetLR(float speed);
 	};
 }
